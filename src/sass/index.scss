@@ -1,9 +1,15 @@
-@import './common';
+@import './base/common';
 @import './example';
+@import './base/reset';
 
-@import './layout/header';
+
+
+@import './components/header';
 @import './pages/main/hero';
 @import './pages/main/sale';
+
+@import './pages/accessories/accessories';
+
 
 @import './pages/take-oder/take-order';
 
