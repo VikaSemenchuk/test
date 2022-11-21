@@ -14,6 +14,7 @@
     background-repeat: no-repeat;
     background-position: left 0 top 87px, left 211px top -48px, left 150px top 394px, right;
     background-size: 60px, 150px, 88px, cover;
+    transform: rotate(-29deg);
     
     @include double-pixel {
     background-image: url(/src/images/hero/mob-hero-2x.jpg);
