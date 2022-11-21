@@ -3,6 +3,7 @@
     background-color: $header-bgcolor;
     box-shadow: $header-boxshadow;
     z-index: 2;
+
 }
 
 .header-logo {
@@ -143,6 +144,7 @@
 
 .mobile-menu.is-open {
     transform: translateY(0);
+    position: fixed;
 }
 
 .mobile-list {
@@ -204,4 +206,10 @@
     @media screen and(max-width: 767px) {
         display: none;
     }
+}
+
+.no-scroll {
+    position: fixed;
+    overflow: hidden;
+    width: 100vw;
 }
