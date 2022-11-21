@@ -1,6 +1,14 @@
 .container {
+  width: 100%;
   padding: 0 16px;
   margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    // не впевнена чи правильні падінги, в тому макеті ні..ра не ясно, хто знає точно які тут падінги-скажіть мені я виправлю
+
+    padding: 0 15px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -8,6 +16,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 1280px;
   }
 }

@@ -1,28 +1,4 @@
-a {
-  text-decoration: none;
-}
 
-li {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 // body {
 //   font-family: 'Roboto', sans-serif;
@@ -30,69 +6,9 @@ img {
 //   color: #86e543;
 // }
 
-.container {
-  width: 100%;
-  padding: 0 16px;
-  margin: 0 auto;
 
-  @media screen and (min-width: 480px) {
-    width: 317px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-  }
-}
-
-.section {
-  padding-top: 40px;
-  padding-bottom: 48px;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
 
 /*    Accessories */
-
-// .accessories__section {
-//   background-image: url('../images/accessories/backgroung-mob-1x.jpg');
-//   background-size: cover;
-//   background-position: top;
-//   background-repeat: no-repeat;
-//   background-color: darkgreen;
-
-//   @media screen and (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url('../images/accessories/backgroung-mob-2x.jpg');
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     background-image: url('../images/accessories/backgroung-tab-1x.jpg');
-//     @media screen and (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url('../images/accessories/backgroung-tab-2x.jpg');
-//     }
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     background-image: url('../images/accessories/backgroung-desktop-1x.jpg');
-//     @media screen and (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url('../images/accessories/backgroung-desktop-2x.jpg');
-//     }
-//   }
-// }
 
 .accessories__filter {
   margin-bottom: 40px;
