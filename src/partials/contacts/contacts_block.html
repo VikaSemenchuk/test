@@ -23,28 +23,41 @@
            <h3 class="contact-form__title"> CONTACT US</h3>
    
            <form class="contact-form__form">
-              <label class="contact-form__lable">
-               Name
-           <input type="text" 
-           name="name" 
-           id="name" 
-           class="contact-form__input">
-              </label>
-              <label  class="contact-form__lable">
-              Email
-           <input
-           type="email" 
-           name="email" 
-           id="email" 
-           class="contact-form__input">
-              </label>
-              <label  class="contact-form__lable">
-               Leave your message
-               <textarea  class="modal-coment" name="comment" cols="20" ></textarea>
-              </label>
+            <div class="contact-form__div">
+                <label class="contact-form__lable">
+                    <span class="contacts-form__name">Name</span>
+                <input type="text" 
+                name="name" 
+                id="name" 
+                class="contact-form__input">
+                   </label>
+            </div>
+             
+              <div class="contact-form__div">
+                <label  class="contact-form__lable">
+                    <span class="contacts-form__name">
+                        Email
+                    </span>
+                 <input
+                 type="email" 
+                 name="email" 
+                 id="email" 
+                 class="contact-form__input">
+                    </label>
+              </div>
+              
+              <div class="contact-form__div">
+                <label  class="contact-form__lable">
+                    Leave your message
+                    <textarea  class="contact-form__modal-coment" 
+                    name="comment" 
+                    cols="20" ></textarea>
+                   </label>
+              </div>
+              
            </form>
    
-           <button  type="button"  class="contact-form__btn" data-modal-open>
+           <button  type="button"  class="contact-form__btn" >
                SEND
            </button>
        </div>
