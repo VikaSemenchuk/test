@@ -65,8 +65,8 @@
     text-transform: uppercase;
     cursor: pointer;
 
-    // background-color: $hover-line-color;
-    color: $header-bgcolor;
+    background-color: $accent-color;
+    color: $main-bgcolor;
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 
