@@ -24,6 +24,12 @@ img {
   height: auto;
 }
 
+.no-scroll {
+  position: fixed;
+  overflow: hidden;
+  width: 100vw;
+}
+
 main {
   background-image: url('../images/body/backgroung-mob-1x.jpg');
   background-size: cover;
