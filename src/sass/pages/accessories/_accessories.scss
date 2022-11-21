@@ -62,37 +62,37 @@ img {
 
 /*    Accessories */
 
-.accessories__section {
-  background-image: url('../images/accessories/backgroung-mob-1x.jpg');
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-color: darkgreen;
+// .accessories__section {
+//   background-image: url('../images/accessories/backgroung-mob-1x.jpg');
+//   background-size: cover;
+//   background-position: top;
+//   background-repeat: no-repeat;
+//   background-color: darkgreen;
 
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/accessories/backgroung-mob-2x.jpg');
-  }
+//   @media screen and (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     background-image: url('../images/accessories/backgroung-mob-2x.jpg');
+//   }
 
-  @media screen and (min-width: 768px) {
-    background-image: url('../images/accessories/backgroung-tab-1x.jpg');
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/accessories/backgroung-tab-2x.jpg');
-    }
-  }
+//   @media screen and (min-width: 768px) {
+//     background-image: url('../images/accessories/backgroung-tab-1x.jpg');
+//     @media screen and (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url('../images/accessories/backgroung-tab-2x.jpg');
+//     }
+//   }
 
-  @media screen and (min-width: 1200px) {
-    background-image: url('../images/accessories/backgroung-desktop-1x.jpg');
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/accessories/backgroung-desktop-2x.jpg');
-    }
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     background-image: url('../images/accessories/backgroung-desktop-1x.jpg');
+//     @media screen and (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url('../images/accessories/backgroung-desktop-2x.jpg');
+//     }
+//   }
+// }
 
 .accessories__filter {
   margin-bottom: 40px;
