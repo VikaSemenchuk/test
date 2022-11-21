@@ -12,7 +12,10 @@
 // @import './example';
 
 @import './components/header';
+@import './components/footer';
+
 @import './pages/main/hero';
+@import './pages/main/gallery';
 @import './pages/main/sale';
 
 @import './pages/accessories/accessories';
@@ -20,6 +23,11 @@
 @import './pages/contacts/contacts';
 
 @import './pages/take-oder/take-order';
+
+@import './pages/blog/blog';
+@import './pages/blog-article/blog-article';
+
+
 
 
 
