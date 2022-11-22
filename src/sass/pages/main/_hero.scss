@@ -1,0 +1,119 @@
+.hero {
+    padding: 180px 0 127px 0;
+    text-align: center;
+
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $main-bgcolor;
+    background-image: 
+        url(/src/images/hero/Fon_hero-1x.png),
+        url(/src/images/hero/mob-Items-1x.png),
+        url(/src/images/hero/mob-hero-1x.jpg);
+    background-repeat: no-repeat;
+<<<<<<< HEAD
+    background-position: right bottom 25px, right;
+    background-size: 304px, cover;
+    background-blend-mode: luminosity;
+=======
+    background-position: right, right bottom 25px, right;
+    background-size:cover, 304px, cover;
+    mix-blend-mode: luminosity;
+>>>>>>> eb72d434095f0c88ab0a79f37f463763b7e8d8dd
+
+    @include double-pixel {
+    background-image: 
+        url(/src/images/hero/Fon_hero-1x.png),
+        url(/src/images/hero/mob-Items-2x.png),
+        url(/src/images/hero/mob-hero-2x.jpg);
+    }
+    @include tablet {
+        padding: 180px 0 127px 0;
+
+        max-width: 768px;
+        text-align: start;
+
+        background-image: 
+            url(/src/images/hero/Fon_hero-1x.png),
+            url(/src/images/hero/tab-Items-1x.png),
+            url(/src/images/hero/tab-hero-1x.jpg);
+        background-position: right, top 33px right, right;
+        background-size:cover, 379px, cover;
+
+            @include double-pixel {
+    background-image: 
+        url(/src/images/hero/Fon_hero-1x.png),
+        url(/src/images/hero/tab-Items-2x.png),
+        url(/src/images/hero/tab-hero-2x.jpg);
+            }
+    }
+
+    @include desktop {
+        width: 100%;
+        max-width: 1280px;
+        padding: 200px 0 200px 0;
+    background-image: 
+        url(/src/images/hero/Fon_hero-1x.png),
+        url(/src/images/hero/pc-Items-1x.png),
+        url(/src/images/hero/pc-hero-1x.jpg);
+        @include double-pixel {
+    background-image: 
+        url(/src/images/hero/Fon_hero-1x.png),
+        url(/src/images/hero/pc-Items-2x.png),
+        url(/src/images/hero/pc-hero-2x.jpg);
+        }
+    }
+}
+
+.hero__title {
+    margin: 0 auto 25px auto;
+    max-width: 247px;
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.18;
+    color: $text-color;
+
+    @include tablet {
+        margin: 0 auto 94px 0;
+        max-width: 388px;
+
+        font-size: 56px;
+        line-height: 1.18;
+    }
+
+    @include desktop {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}
+
+.hero__btn {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 16px;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: right;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    background-color: $accent-color;
+    color: $main-bgcolor;
+
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+    &:hover, &:focus {
+    box-shadow: button-boxshadow;
+    }
+
+    @include tablet {
+        font-size: 32px;
+        line-height: 1.19;
+    }
+}
