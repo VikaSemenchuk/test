@@ -11,6 +11,7 @@
         url(/src/images/hero/Fon_hero-1x.png),
         url(/src/images/hero/mob-Items-1x.png),
         url(/src/images/hero/mob-hero-1x.jpg);
+        
     background-repeat: no-repeat;
 
     background-position: right bottom 25px, right;
@@ -19,7 +20,7 @@
 
     background-position: right, right bottom 25px, right;
     background-size:cover, 304px, cover;
-    mix-blend-mode: luminosity;
+    background-blend-mode: luminosity;
 
 
     @include double-pixel {
