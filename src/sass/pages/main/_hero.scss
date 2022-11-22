@@ -8,8 +8,8 @@
 
     background-color: $main-bgcolor;
     background-image: 
-        url(/src/images/hero/Fon_hero-1x.png),
-        url(/src/images/hero/mob-Items-1x.png),
+        url(/src/images/hero/fon-hero-1x.png),
+        url(/src/images/hero/mob-items-1x.png),
         url(/src/images/hero/mob-hero-1x.jpg);
         
     background-repeat: no-repeat;
@@ -25,46 +25,50 @@
 
     @include double-pixel {
     background-image: 
-        url(/src/images/hero/Fon_hero-1x.png),
-        url(/src/images/hero/mob-Items-2x.png),
+        url(/src/images/hero/fon-hero-1x.png),
+        url(/src/images/hero/mob-items-2x.png),
         url(/src/images/hero/mob-hero-2x.jpg);
     }
     @include tablet {
-        padding: 180px 0 127px 0;
+        padding: 154px 0 208px 0;
 
         max-width: 768px;
         text-align: start;
 
         background-image: 
-            url(/src/images/hero/Fon_hero-1x.png),
-            url(/src/images/hero/tab-Items-1x.png),
+            url(/src/images/hero/fon-hero-1x.png),
+            url(/src/images/hero/tab-items-1x.png),
             url(/src/images/hero/tab-hero-1x.jpg);
-        background-position: right, top 33px right, right;
+        background-position: right -50px top -50px, top 33px right, right -50px top -50px;
         background-size:cover, 379px, cover;
 
-            @include double-pixel {
-    background-image: 
-        url(/src/images/hero/Fon_hero-1x.png),
-        url(/src/images/hero/tab-Items-2x.png),
-        url(/src/images/hero/tab-hero-2x.jpg);
-            }
+        @include double-pixel {
+            background-image: 
+                url(/src/images/hero/fon-hero-1x.png),
+                url(/src/images/hero/tab-items-2x.png),
+                url(/src/images/hero/tab-hero-2x.jpg);
+        }
     }
 
     @include desktop {
         width: 100%;
         max-width: 1280px;
-        padding: 200px 0 200px 0;
-    background-image: 
-        url(/src/images/hero/Fon_hero-1x.png),
-        url(/src/images/hero/pc-Items-1x.png),
-        url(/src/images/hero/pc-hero-1x.jpg);
+        padding: 180px 0 209px 102px;
+        background-image: 
+            url(/src/images/hero/pc-hero-fon-1x.png),
+            url(/src/images/hero/pc-items-1x.png),
+            url(/src/images/hero/pc-hero-1x.jpg);
+        background-position: center bottom 20px, top 72px right 38px, center bottom 20px;
+        background-size:cover, 668px, cover;
+
+
         @include double-pixel {
-    background-image: 
-        url(/src/images/hero/Fon_hero-1x.png),
-        url(/src/images/hero/pc-Items-2x.png),
-        url(/src/images/hero/pc-hero-2x.jpg);
+            background-image: 
+                url(/src/images/hero/pc-hero-fon-1x.png),
+                url(/src/images/hero/pc-items-2x.png),
+                url(/src/images/hero/pc-hero-2x.jpg);
+                }
         }
-    }
 }
 
 .hero__title {
@@ -85,9 +89,11 @@
     }
 
     @include desktop {
-        width: 696px;
-        font-size: 44px;
-        line-height: 1.36;
+        margin: 0 auto 40px 0;
+        max-width: 515px;
+
+        font-size: 64px;
+        line-height: 1.17;
     }
 }
 
