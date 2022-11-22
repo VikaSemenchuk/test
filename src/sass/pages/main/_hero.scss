@@ -12,15 +12,15 @@
         url(/src/images/hero/mob-Items-1x.png),
         url(/src/images/hero/mob-hero-1x.jpg);
     background-repeat: no-repeat;
-<<<<<<< HEAD
+
     background-position: right bottom 25px, right;
     background-size: 304px, cover;
     background-blend-mode: luminosity;
-=======
+
     background-position: right, right bottom 25px, right;
     background-size:cover, 304px, cover;
     mix-blend-mode: luminosity;
->>>>>>> eb72d434095f0c88ab0a79f37f463763b7e8d8dd
+
 
     @include double-pixel {
     background-image: 
