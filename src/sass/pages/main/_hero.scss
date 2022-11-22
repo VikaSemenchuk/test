@@ -7,14 +7,11 @@
     margin-right: auto;
 
     background-image: 
-        url(/src/images/hero/mouse-1x.png),
-        url(/src/images/hero/headphones-1x.png),
-        url(/src/images/hero/keyboard-1x.png),
+        url(/src/images/hero/mob-Items-1x.png),
         url(/src/images/hero/mob-hero-1x.jpg);
     background-repeat: no-repeat;
-    background-position: left 0 top 87px, left 211px top -48px, left 150px top 394px, right;
-    background-size: 60px, 150px, 88px, cover;
-    transform: rotate(-29deg, 28deg, 24deg, 0);
+    background-position: left 16px bottom 25px, right;
+    background-size: 304px, cover;
     
     @include double-pixel {
     background-image: url(/src/images/hero/mob-hero-2x.jpg);
