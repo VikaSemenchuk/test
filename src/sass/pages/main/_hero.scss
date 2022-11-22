@@ -6,6 +6,7 @@
     margin-left: auto;
     margin-right: auto;
 
+    background-color: $main-bgcolor;
     background-image: 
         url(/src/images/hero/mob-Items-1x.png),
         url(/src/images/hero/mob-hero-1x.jpg);
@@ -47,6 +48,8 @@
     line-height: 1.18;
     text-align: center;
     color: $text-color;
+    mix-blend-mode: normal;
+
 
     @include tablet {
         width: 360px;
@@ -73,6 +76,8 @@
 
     background-color: $accent-color;
     color: $main-bgcolor;
+    mix-blend-mode: normal;
+
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 
