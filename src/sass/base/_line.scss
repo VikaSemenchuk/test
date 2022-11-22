@@ -1,0 +1,37 @@
+.line-1 {
+    background-repeat: no-repeat;
+    top: 42;
+    left: -40;
+    height: 71px;
+    width: 100vw;
+    position: absolute;
+    content: "";
+    background-image: url(../images/vector21.svg);
+
+    @media (max-width: 768px) {
+        left: -70;
+    }
+
+    @media (max-width: 320px) {
+        left: -70;
+    }
+}
+
+.line-2 {
+    background-repeat: no-repeat;
+    top: 50;
+    left: -40;
+    height: 71px;
+    width: 100vw;
+    position: absolute;
+    content: "";
+    background-image: url(../images/vector22.svg);
+
+    @media (max-width: 768px) {
+        left: -70;
+    }
+
+    @media (max-width: 480px) {
+        left: -70;
+    }
+}
