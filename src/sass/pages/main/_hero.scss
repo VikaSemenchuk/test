@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-position: right bottom 25px, right;
     background-size: 304px, cover;
-    mix-blend-mode: luminosity;
+    background-blend-mode: luminosity;
 
     @include double-pixel {
     background-image: url(/src/images/hero/mob-hero-2x.jpg);
@@ -76,7 +76,6 @@
 
     background-color: $accent-color;
     color: $main-bgcolor;
-    mix-blend-mode: normal;
 
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
