@@ -20,7 +20,7 @@
 
     background-position: right, right bottom 25px, right;
     background-size:cover, 304px, cover;
-    background-blend-mode: luminosity;
+    background-blend-mode: normal, luminosity, normal;
 
 
     @include double-pixel {
