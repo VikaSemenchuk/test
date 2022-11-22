@@ -1,3 +1,5 @@
+import './js/swiper-slider';
+  
 (() => {
     const menuBtnRef = document.querySelector("[data-menu-button]");
     const mobileMenuRef = document.querySelector("[data-menu]");
@@ -14,4 +16,6 @@
       mobileMenuRef.classList.toggle("is-open");
       body.classList.toggle("no-scroll");
     });
-  })();
+})();
+
+
