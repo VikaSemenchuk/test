@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-position: right, right bottom 25px, right;
     background-size:cover, 304px, cover;
-
+    mix-blend-mode: luminosity;
 
     @include double-pixel {
     background-image: 
