@@ -1,38 +1,57 @@
 .contact{
-  
     background-image:url(../images/contacts/back@1x.mob.jpg);
     
  }
-
+.contact__content{
+    margin-left: 16px;
+}
  .contact__title{
      margin-right: 16px;
      font-weight: 600;
      font-size: 24px;
      line-height: 28px;
      color: #ffff;
+     padding:40 207 35 16;
  }
  .contact__img{
      max-width: 100%;
      height: 346px;
+    padding: auto;
  }
  .contact__text{
      color: #ffff;
      font-weight: 400;
      font-size: 16px;
-     line-height: 19px}
- 
+     line-height: 19px;
+    padding: 16 16 24 0;
+    }
+.contact__text-email{
+     color: #FFFFFF;
+        }
  .contact-form__subtitle{
  color: #ffff;
  font-weight: 400;
  font-size: 16px;
  line-height: 19px;
+ padding-bottom:8px ;
+ }
+ .contact-form{
+    padding: 24px 0 24px 0;
  }
  .contact-form__contact{
      color:#8D9289;
      font-weight: 400;
      font-size: 16px;
      line-height: 19px;
+     
+     
  }
+ 
+ .contact-form__form{
+    padding-top: 16px;
+ }
+   
+ 
  .contact-form__title{
      color: #86E543;
      font-weight: 600;
@@ -41,24 +60,45 @@
  }
  .contact-form__lable{
      color: #FFFFFF;
+     
  }
  .contact-form__input{
-     border-color: #86E543;
+     width: 288px;
      background-color:transparent;
+     border: none;
+     border-bottom: 1px solid  #86E543 ;
+     padding-bottom: 4px;
+ }
+ .address__email{
+    padding-bottom: 24px;
+ }
+ .contact-form__input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding-bottom: 4px;
+ }
+ .contact-form__text{
+    padding-bottom: 4px;
+    color: #8D9289;
  }
  .contact-form__modal-coment{
+    width: 288;
+    height: 95px;
      border: 1px solid #86E543;
      border-radius: 0px;
      background-color:transparent;
      resize: none;
  }
- .contacts-form__name{
- position: absolute;
- }
- .contact-form__div{
-     position: relative;
- }
  
+ .contact-form__div:not(:first-child){
+     padding-top: 40px;
+ }
+ .contact-number{
+    display: block;
+ }
  
  
  
@@ -74,15 +114,24 @@
      font-weight: 700;
      font-size: 16px;
      line-height: 19px;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
+     
      padding: 16px 20px;
      gap: 10px;
-  color: #ffff;
-  background-color: transparent;
-  width: 173px;
+     color: #ffff;
+     background-color: transparent;
+     width: 173px;
      height: 51px;
+    margin: 0 auto;
+    display: block;
+    
+ }
+ .contact-form__btn:hover{
+    filter: 
+    drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1)) 
+    drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
+}
+ .contact__btn{
+    padding-bottom: 48px;
  }
  .modal-contact__btn-close{
      border-radius: 50%;
