@@ -62,7 +62,11 @@
 }
 
 .line-1 {
+<<<<<<< Updated upstream
     background-repeat: no-repeat;
+=======
+     background-repeat: no-repeat;
+>>>>>>> Stashed changes
     top: 42;
     left: -40;
     height: 71px;
@@ -94,12 +98,28 @@
     @media (max-width: 480px) {
         left: -70;
     }
+<<<<<<< Updated upstream
+=======
 }
 
+.accessories__card {
+  display: block;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+  max-width: 285px;   
+>>>>>>> Stashed changes
+}
 
 .accessories__overlay-box {
   position: relative;
   overflow: hidden;
+
+  .accessories__item:hover &,
+.accessories__item:focus & {
+  filter: drop-shadow(0px 4px 4px rgba(134, 229, 67, 0.2));
+}
 }
 
 .accessories__overlay {
@@ -109,10 +129,14 @@
   height: 100%;
   background: linear-gradient(0deg, #01383a, #01383a);
   border: 1px solid #86e543;
-  box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
   border-radius: 12px;
   transform: translateY(100%);
   transition: transform 250ms linear;
+
+  .accessories__item:hover &,
+.accessories__item:focus & {
+  transform: translateY(0);
+}
 }
 
 .accessories__overlay-text {
@@ -123,10 +147,7 @@
   color: #ffffff;
 }
 
-.accessories__item:hover .accessories__overlay,
-.accessories__item:focus .accessories__overlay {
-  transform: translateY(0);
-}
+
 
 .accessories__list {
   display: flex;
@@ -197,9 +218,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 100%;
-
   text-decoration-line: line-through;
-
   color: #8d9289;
 }
 
