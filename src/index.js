@@ -36,3 +36,5 @@
     refs.Modal.classList.toggle('is-hidden');
   }
 })();
+
+import './js/swiper-slider';
