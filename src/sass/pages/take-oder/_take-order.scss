@@ -1,0 +1,234 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+// .order.container {
+//     width: 1280px;
+//     padding: 120px 15px;
+//     margin: 0 auto;
+// }
+
+/* -------------Order Information-------------- */
+
+.order {
+    background-color: rgba(1, 56, 58, 1);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        // url(../images/bg-img-desktop-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.order-infiormation {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 121px;
+    margin-bottom: 48px;
+}
+
+.order-title,
+.order-section-title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.17;
+
+    color: #FFFFFF;
+}
+
+.order-title {
+    margin-left: 100px;
+    margin-bottom: 75px;
+}
+
+.order-section-title {
+    margin-bottom: 32px;
+}
+
+.order-price-without-discount {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    text-decoration-line: line-through;
+
+    color: #8D9289;
+}
+
+.order-price-with-discount {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+
+    color: #86E543;
+}
+
+.order-prices {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.order-picture-list {
+    display: flex;
+    gap: 24px;
+}
+
+.order-img {
+    border-radius: 6px;
+}
+
+/* --------------Order Form------------- */
+
+.order-form-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.16;
+
+    color: #86E543;
+    margin-bottom: 48px;
+}
+
+.order-form-part-one,
+.order-form-part-two {
+    display: flex;
+    flex-direction: column;
+    min-width: 590px;
+}
+
+.order-form {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.order-label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.11;
+
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+}
+
+.form-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(134, 229, 67, 1);
+    width: 100%;
+    height: 40px;
+    margin-bottom: 24px;
+    outline: transparent;
+    color: #fcfcfc;
+}
+
+.order-form-thumb {
+    position: relative;
+}
+
+.order-label.input {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.form-item:focus+.order-label.input {
+    transform: translateY(-100%);
+}
+
+.order-text-area {
+    background-color: transparent;
+    border: 1px solid rgba(134, 229, 67, 1);
+    width: 100%;
+    height: 256px;
+    margin-top: 4px;
+    resize: none;
+    outline: transparent;
+    font-family: inherit;
+    padding: 15px;
+    color: #fcfcfc;
+}
+
+.btn-buy {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.18;
+    text-transform: uppercase;
+    color: #01383A;
+    background-color: #86E543;
+    border-radius: 16px;
+    cursor: pointer;
+    border: none;
+
+    padding: 16px 64px;
+}
+
+.btn-buy:hover {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.btn-add {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.18;
+    text-transform: uppercase;
+    color: #86E543;
+    background-color: #01383A;
+    border-radius: 16px;
+    cursor: pointer;
+    border: 1px solid #86E543;
+
+    padding: 16px 64px;
+}
+
+.btn-add:hover {
+    filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1)) drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+}
+
+.order-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 48px;
+}
