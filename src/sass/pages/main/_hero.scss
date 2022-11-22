@@ -10,7 +10,7 @@
         url(/src/images/hero/mob-Items-1x.png),
         url(/src/images/hero/mob-hero-1x.jpg);
     background-repeat: no-repeat;
-    background-position: left 16px bottom 25px, right;
+    background-position: right bottom 25px, right;
     background-size: 304px, cover;
     
     @include double-pixel {
