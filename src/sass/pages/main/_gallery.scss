@@ -97,3 +97,12 @@
     }
 
 }
+
+
+.swiper-pagination-bullets {
+        margin: 0 
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--swiper-pagination-color,var(--swiper-theme-color));
+}
