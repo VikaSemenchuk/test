@@ -13,7 +13,7 @@
     background-position: right bottom 25px, right;
     background-size: 304px, cover;
     mix-blend-mode: luminosity;
-    
+
     @include double-pixel {
     background-image: url(/src/images/hero/mob-hero-2x.jpg);
     }
@@ -29,7 +29,7 @@
 
     @include desktop {
         width: 100%;
-        max-width: 1600px;
+        max-width: 1280px;
         padding: 200px 0 200px 0;
         background-image: url(/src/images/hero/pc-hero-1x.jpg);
         @include double-pixel {
