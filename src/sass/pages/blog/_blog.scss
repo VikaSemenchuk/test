@@ -7,7 +7,7 @@
 //   max-width: 767px;
 
 //   @media screen and (min-width: 768px) {
-//     background-image: url(../imges/bg-tab-1x.jpg);
+//     background-image: url(../images/bg-tab-1x.jpg);
 //     margin-right: auto;
 //     margin-left: auto;
 //     min-width: 768px;
@@ -15,7 +15,7 @@
 //   }
 
 //   @media screen and (min-width: 1280px) {
-//     background-image: url(../imges/bg-desc-1x.jpg);
+//     background-image: url(../images/bg-desc-1x.jpg);
 //     margin-right: auto;
 //     margin-left: auto;
 //     min-width: 1280px;
@@ -172,6 +172,10 @@
     justify-content: space-between;
   }
 
+  position: relative;
+}
+
+.line-box {
   position: relative;
 }
 
