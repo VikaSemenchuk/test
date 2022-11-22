@@ -18,9 +18,11 @@
     }
     @include tablet {
         max-width: 768px;
-        background-image: url( /src/images/hero/tab-hero-1x.jpg);
+    background-image: 
+        url(/src/images/hero/tab-Items-1x.png),
+        url(/src/images/hero/tab-hero-1x.jpg);
             @include double-pixel {
-                background-image: url(/src/images/hero/tab-hero-2x.jpg);
+                background-image: url(/src/images/hero/tab-Items-2x.png);
             }
     }
 
