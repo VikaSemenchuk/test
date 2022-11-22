@@ -10,6 +10,7 @@
   height: 100%;
   opacity: 1;
   background-color: rgba(0, 20, 20, 0.8);
+  z-index: 1;
 }
 .backdrop .is-hidden {
   visibility: hidden;
@@ -20,34 +21,53 @@
 .order-modal,
 .contact-modal {
   position: relative;
-  width: 272px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 87%;
   min-height: 367px;
   background-color: $main-bgcolor;
+  padding: 100px 0;
 }
-
+@include mobile {
+  .add-modal,
+  .order-modal,
+  .contact-modal {
+    width: 417px;
+  }
+}
 @include tablet {
-  .modal {
+  .add-modal,
+  .order-modal,
+  .contact-modal {
     width: 688px;
     min-height: 500px;
+    padding: 88px 0;
   }
 }
 @include desktop {
-  .modal {
+  .add-modal,
+  .order-modal,
+  .contact-modal {
     width: 768px;
     min-height: 527px;
   }
 }
+
 .modal__close-btn {
   position: absolute;
   top: 20px;
   right: 20px;
+  border: 2px solid #86e543;
   border-radius: 50%;
-  background-color: transparent;
-  border-color: transparent;
+  background-color: $main-bgcolor;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 31px;
+  height: 31px;
 
   cursor: pointer;
 }
@@ -55,60 +75,11 @@
 .modal__close-btn:focus {
   box-shadow: $button-boxshadow;
 }
-.modal__thumb {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 100px;
-  padding-bottom: 100px;
+.modal__close-btn:hover .modal__close-icon,
+.modal__close-btn:focus .modal__close-icon {
+  transform: scale(0.7);
 }
-@include tablet {
-  .modal__thumb {
-    padding-top: 88px;
-    padding-bottom: 88px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@include desktop {
-  .modal__thumb {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-}
-.modal__thumb--big {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-@include tablet {
-  .modal__thumb--big {
-    padding-left: 56px;
-    padding-right: 56px;
-  }
-}
-@include desktop {
-  .modal__thumb--big {
-    padding-left: 88px;
-    padding-right: 88px;
-  }
-}
-.modal__thumb--small {
-  padding-left: 29px;
-  padding-right: 29px;
-}
-@include tablet {
-  .modal__thumb--small {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
-@include desktop {
-  .modal__thumb--small {
-    padding-left: 65px;
-    padding-right: 65px;
-  }
-}
+
 .modal__text {
   font-weight: 600;
   font-size: 24px;
@@ -157,7 +128,9 @@
   cursor: pointer;
 }
 @include tablet {
-  .modal__btn {
+  .add-modal__btn,
+  .order-modal__btn,
+  .contact-modal__btn {
     width: 306px;
     margin-top: 56px;
     font-size: 32px;
