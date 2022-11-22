@@ -59,41 +59,41 @@
 
 }
 }
-// .overlay {
+.overlay {
    
-//     margin-left: auto;
-//     margin-right: auto;
-//     max-width: 480px;
-//     height: 770px;
-//     background-color: #C4C4C4;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//         // background-image: url(./images/Mobile.jpg)
-//         background-image: url(../images/gallery/mobile.jpg);
-//         ;
-//         background-image: url(../images/gallery/mobile2x.jpg);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+    height: 770px;
+    background-color: #C4C4C4;
+    background-repeat: no-repeat;
+    background-size: cover;
+        // background-image: url(./images/Mobile.jpg)
+        background-image: url(../images/gallery/mobile.jpg);
+        ;
+        background-image: url(../images/gallery/mobile2x.jpg);
 
-//     @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//             background-image:
-//                     url(../images/gallery/mobile2x.jpg);
-//     }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+            background-image:
+                    url(../images/gallery/mobile2x.jpg);
+    }
 
 
-//     @media screen and (min-width: 768px) {
-//             background-image: url(../images/gallery/tablet.jpg);
-//             background-image: url(../images/gallery/tablet2x.jpg);
-//             max-width: 768px;
-//             height: 498px;
-//     }
+    @media screen and (min-width: 768px) {
+            background-image: url(../images/gallery/tablet.jpg);
+            background-image: url(../images/gallery/tablet2x.jpg);
+            max-width: 768px;
+            height: 498px;
+    }
 
-//     @media screen and (min-width: 1200px) {
-//             background-image:url(../images/gallery/desktop.jpg);
-//             background-image: url(../images/gallery/desktop2x.jpg);
+    @media screen and (min-width: 1200px) {
+            background-image:url(../images/gallery/desktop.jpg);
+            background-image: url(../images/gallery/desktop2x.jpg);
 
-//             max-width: 1600px;
-//             height: 506px;
-//     }
+            max-width: 1600px;
+            height: 506px;
+    }
 
-// }
+}
