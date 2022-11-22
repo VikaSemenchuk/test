@@ -8,23 +8,38 @@
 
     background-color: $main-bgcolor;
     background-image: 
+        url(/src/images/hero/Fon_hero-1x.png),
         url(/src/images/hero/mob-Items-1x.png),
         url(/src/images/hero/mob-hero-1x.jpg);
     background-repeat: no-repeat;
-    background-position: right bottom 25px, right;
-    background-size: 304px, cover;
+    background-position: right, right bottom 25px, right;
+    background-size:cover, 304px, cover;
     mix-blend-mode: luminosity;
 
     @include double-pixel {
-    background-image: url(/src/images/hero/mob-hero-2x.jpg);
+    background-image: 
+        url(/src/images/hero/Fon_hero-1x.png),
+        url(/src/images/hero/mob-Items-2x.png),
+        url(/src/images/hero/mob-hero-2x.jpg);
     }
     @include tablet {
+        padding: 180px 0 127px 0;
+
         max-width: 768px;
-    background-image: 
-        url(/src/images/hero/tab-Items-1x.png),
-        url(/src/images/hero/tab-hero-1x.jpg);
+        text-align: start;
+
+        background-image: 
+            url(/src/images/hero/Fon_hero-1x.png),
+            url(/src/images/hero/tab-Items-1x.png),
+            url(/src/images/hero/tab-hero-1x.jpg);
+        background-position: right, top 33px right, right;
+        background-size:cover, 379px, cover;
+
             @include double-pixel {
-                background-image: url(/src/images/hero/tab-Items-2x.png);
+    background-image: 
+        url(/src/images/hero/Fon_hero-1x.png),
+        url(/src/images/hero/tab-Items-2x.png),
+        url(/src/images/hero/tab-hero-2x.jpg);
             }
     }
 
@@ -32,9 +47,15 @@
         width: 100%;
         max-width: 1280px;
         padding: 200px 0 200px 0;
-        background-image: url(/src/images/hero/pc-hero-1x.jpg);
+    background-image: 
+        url(/src/images/hero/Fon_hero-1x.png),
+        url(/src/images/hero/pc-Items-1x.png),
+        url(/src/images/hero/pc-hero-1x.jpg);
         @include double-pixel {
-            background-image: url(/src/images/hero/pc-hero-2x.jpg);
+    background-image: 
+        url(/src/images/hero/Fon_hero-1x.png),
+        url(/src/images/hero/pc-Items-2x.png),
+        url(/src/images/hero/pc-hero-2x.jpg);
         }
     }
 }
@@ -46,13 +67,14 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 1.18;
-    text-align: center;
     color: $text-color;
-    mix-blend-mode: normal;
-
 
     @include tablet {
-        width: 360px;
+        margin: 0 auto 94px 0;
+        max-width: 388px;
+
+        font-size: 56px;
+        line-height: 1.18;
     }
 
     @include desktop {
@@ -83,5 +105,10 @@
 
     &:hover, &:focus {
     box-shadow: button-boxshadow;
+    }
+
+    @include tablet {
+        font-size: 32px;
+        line-height: 1.19;
     }
 }
