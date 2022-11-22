@@ -55,7 +55,7 @@
         max-width: 1280px;
         padding: 180px 0 209px 102px;
         background-image: 
-            url(/src/images/hero/fon-hero-1x.png),
+            url(/src/images/hero/pc-hero-fon-1x.png),
             url(/src/images/hero/pc-items-1x.png),
             url(/src/images/hero/pc-hero-1x.jpg);
         background-position: center bottom 20px, top 72px right 38px, center bottom 20px;
@@ -64,7 +64,7 @@
 
         @include double-pixel {
             background-image: 
-                url(/src/images/hero/fon-hero-1x.png),
+                url(/src/images/hero/pc-hero-fon-1x.png),
                 url(/src/images/hero/pc-items-2x.png),
                 url(/src/images/hero/pc-hero-2x.jpg);
                 }
