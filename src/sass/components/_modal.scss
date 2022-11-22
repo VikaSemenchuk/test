@@ -12,7 +12,7 @@
   background-color: rgba(0, 20, 20, 0.8);
   z-index: 1;
 }
-.backdrop .is-hidden {
+.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -28,6 +28,8 @@
   min-height: 367px;
   background-color: $main-bgcolor;
   padding: 100px 0;
+
+  transition: transform 500ms linear;
 }
 @include mobile {
   .add-modal,
