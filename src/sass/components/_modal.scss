@@ -16,7 +16,9 @@
   opacity: 0;
   pointer-events: none;
 }
-.modal {
+.add-modal,
+.order-modal,
+.contact-modal {
   position: relative;
   width: 272px;
   min-height: 367px;
@@ -48,6 +50,10 @@
   align-items: center;
 
   cursor: pointer;
+}
+.modal__close-btn:hover,
+.modal__close-btn:focus {
+  box-shadow: $button-boxshadow;
 }
 .modal__thumb {
   display: flex;
@@ -126,7 +132,9 @@
     font-size: 56px;
   }
 }
-.modal__btn {
+.add-modal__btn,
+.order-modal__btn,
+.contact-modal__btn {
   width: 173px;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -141,7 +149,7 @@
   line-height: 1.18;
   text-align: right;
   text-transform: uppercase;
-  color: #01383a;
+  color: $main-bgcolor;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,4 +162,12 @@
     margin-top: 56px;
     font-size: 32px;
   }
+}
+.add-modal__btn:hover,
+.order-modal__btn:hover,
+.contact-modal__btn:hover,
+.add-modal__btn:focus,
+.order-modal__btn:focus,
+.contact-modal__btn:focus {
+  box-shadow: $button-boxshadow;
 }
