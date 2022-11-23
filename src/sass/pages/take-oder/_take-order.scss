@@ -48,29 +48,94 @@ img {
 /* -------------Order Information-------------- */
 
 .order {
-    /* background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-url(../images/bg-img-desktop-1x.jpg); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     margin-top: 120px;
 }
+.order-mob-section-title{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.18;
+    color: #FFFFFF;
+    max-width: 287px;
+    margin-bottom: 16px;
+    @include tablet{
+        max-width: 692px;
+    }
+}
+.order-mob-main-img{
+    margin-bottom: 16px;
+}
+.order-mob-price-without-discount {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    text-decoration-line: line-through;
 
+    color: #8D9289;
 
+}
+
+.order-mob-price-with-discount {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+
+    color: #86E543;
+}
+
+.order-mob-prices{
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    @include tablet{
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}
+
+.order-mob-main-img{
+margin-bottom: 16px;
+}
+
+.order-mob-container{
+    @include tablet{
+        display: flex;
+        gap: 40px;
+    }
+}
+// --------------------------------------------------
+// дописати картинки в секцію
 .order-infiormation {
     display: flex;
-    flex-direction: row-reverse;
     gap: 121px;
     margin-bottom: 48px;
 }
 
+.order-title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16;
+    color: #FFFFFF;
+}
+
+.order-section-title{
+
+    font-weight: 600;
+        font-size: 32px;
+        line-height: 1.18;
+        color: #FFFFFF;
+        max-width: 287px;
+    @include tablet{
+        max-width: 692px;
+
+    }
+}
+
 .order-title,
 .order-section-title {
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 1.17;
-
-    color: #FFFFFF;
+    @include tablet{
+    font-size: 54px;
+        line-height: 1.17;
+    }
 }
 
 .order-title {
@@ -213,6 +278,8 @@ url(../images/bg-img-desktop-1x.jpg); */
 .order-dropdown {
     border-bottom: 1px solid rgba(134, 229, 67, 1);
     font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
     color: #FFFFFF;
     margin-bottom: 22px;
     height: 40px;
@@ -237,6 +304,9 @@ url(../images/bg-img-desktop-1x.jpg); */
     @include tablet {
         font-size: 32px;
         padding: 16px 64px;
+    }
+    @include desktop{
+        margin-bottom: 0;
     }
 }
 
@@ -272,6 +342,10 @@ url(../images/bg-img-desktop-1x.jpg); */
     display: block;
     margin-left: auto;
     margin-right: auto;
+    @include desktop{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .order-btns {
