@@ -99,11 +99,15 @@ li {
     position: absolute;
     content: "";
     background-image: url(../images/vector21.svg);
-    @media (max-width: 768px) {
+    @media (max-width: 1279px) {
         left: -70;
     }
-    @media (max-width: 320px) {
-        left: -70;
+    @media (max-width: 767px) {
+       transform: scaleY(0.5);
+        height: 71px;
+        width: 200vw;
+        top: -5;
+        left: -180;
     }
 }
 
@@ -117,11 +121,15 @@ li {
     content: "";
     background-image: url(../images/vector22.svg);
      
-    @media (max-width: 768px) {
+    @media (max-width: 1279px) {
         left: -70;
     }
-    @media (max-width: 480px) {
-        left: -70;
+    @media (max-width: 767px) {
+        transform: scaleY(0.5);
+        height: 71px;
+        width: 200vw;
+        top: -1;
+        left: -184;
     }
 }
 
@@ -228,6 +236,8 @@ margin-top: 44px;
 margin-left: auto;
 margin-right: auto;
 width: 153px;
+transition: box-shadow 150ms linear;
+
   @media (min-width: 768px) {
     width: 195px;
     font-size: 28px;
@@ -236,5 +246,9 @@ width: 153px;
   @media (min-width: 1280px) {
     margin-top: 47px;
     width: 195px;
+  }
+
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5), 0px 4px 10px rgba(134, 229, 67, 0.1);
   }
 }
