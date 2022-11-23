@@ -3,6 +3,9 @@
         margin: 0 auto;
         max-width: 1280px;
 }
+.swiper-wrapper {
+        margin-bottom: 32px;
+}
 .swiper-slide {
         position: relative;
 }
@@ -104,6 +107,10 @@
 
 }
 .swiper {
+        & .swiper-pagination {
+                position: relative;
+                bottom: 0;
+        }
         & .swiper-pagination-bullet {
                 margin: 0;
                 width: 16px;
