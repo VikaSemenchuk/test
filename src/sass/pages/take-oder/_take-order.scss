@@ -47,9 +47,12 @@ img {
 
 /* -------------Order Information-------------- */
 
-.order {
-    margin-top: 120px;
-}
+// .order {
+//     margin-top: 40px;
+//     @include tablet{
+//         margin-top: 120px;
+//     }
+// }
 .order-mob-section-title{
     font-weight: 600;
     font-size: 32px;
@@ -58,6 +61,7 @@ img {
     max-width: 287px;
     margin-bottom: 16px;
     @include tablet{
+        font-size: 54px;
         max-width: 692px;
     }
 }
@@ -66,26 +70,35 @@ img {
 }
 .order-mob-price-without-discount {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 100%;
     text-decoration-line: line-through;
 
     color: #8D9289;
 
+    @include tablet{
+        font-size: 24px;
+    }
+
 }
 
 .order-mob-price-with-discount {
     font-weight: 600;
-    font-size: 48px;
+    font-size: 32px;
     line-height: 100%;
 
     color: #86E543;
+
+    @include tablet {
+            font-size: 48px;
+        }
 }
 
 .order-mob-prices{
     display: flex;
     gap: 60px;
     align-items: flex-start;
+    margin-bottom: 16px;
     @include tablet{
         flex-wrap: wrap;
         align-content: center;
@@ -102,12 +115,32 @@ margin-bottom: 16px;
         gap: 40px;
     }
 }
+
+.order-mob-hide{
+    @media screen and(min-width: 1279px){
+        display:none;
+    }
+}
+
+.order-main-img,
+.order-section-title,
+.order-price-without-discount,
+.order-price-with-discount{
+    @media screen and(max-width:1279px){
+        display: none;
+    }
+}
+
+
 // --------------------------------------------------
 // дописати картинки в секцію
 .order-infiormation {
     display: flex;
     gap: 121px;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
+    @include tablet{
+        margin-bottom: 48px;
+    }
 }
 
 .order-title{
@@ -169,11 +202,17 @@ margin-bottom: 16px;
     gap: 40px;
     align-items: center;
     margin-bottom: 40px;
+    @media screen and(max-width: 1279px){
+        margin-bottom: 0;
+    }
 }
 
 .order-picture-list {
     display: flex;
-    gap: 24px;
+    gap: 16px;
+    @include tablet{
+        gap: 24px;
+    }
 }
 
 .order-img {
@@ -188,10 +227,11 @@ margin-bottom: 16px;
     line-height: 1.16;
 
     color: #86E543;
-    margin-bottom: 48px;
+    margin-bottom: 16px;
 
     @include desktop {
         font-size: 36px;
+        margin-bottom: 48px;
     }
 }
 
@@ -208,12 +248,19 @@ margin-bottom: 16px;
 
 }
 
-.order-forms {
-    margin-bottom: 120px;
-}
+// .order-forms {
+//     margin-bottom: 40px;
+//     @include tablet{
+//         margin-bottom: 120px;
+//     }
+// }
 
 .order-form {
     max-width: 480px;
+
+    @include tablet{
+        max-width: 523px;
+    }
 
     @include desktop {
         display: flex;
