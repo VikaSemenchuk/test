@@ -1,27 +1,23 @@
 .banner {
-    display: flex;
-    align-items: flex-end;
-    background-position: center;
-    padding-left: 24px;
-    padding-bottom: 37px;
-    background-color: #E5E5E5;
+        display: flex;
+        align-items: flex-end;
+        background-position: center;
+        padding-left: 24px;
+        padding-bottom: 37px;
+        background-color: #E5E5E5;
 
-@media screen and (max-width:767px) and (min-width:1279px) {
-        padding-left: 41px;
-        padding-bottom: 14px;
+        @media screen and (max-width:767px) and (min-width:1279px) {
+                padding-left: 41px;
+                padding-bottom: 14px;
         }
 
-
-@media screen and (min-width:1280px) {
-        padding-left: 345px;
-        padding-bottom: 49px;
+        @media screen and (min-width:1280px) {
+                padding-left: 345px;
+                padding-bottom: 49px;
         }
-                        
+}
 
-
-&__title {
-        font-family: Roboto;
-        font-style: normal;
+.banner__one {
         font-weight: 600;
         letter-spacing: 0.6em;
         text-align: left;
@@ -30,10 +26,9 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-    
 
-
-
+        background-image: url(../images/gallery/mobile.jpg);
+        
         @media screen and (min-width:480px) {
         width: 257px;
         height: 56px;
@@ -57,7 +52,6 @@
     
 
 
-}
 }
 .overlay {
    
