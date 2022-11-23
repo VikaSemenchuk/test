@@ -1,6 +1,7 @@
 .banner {
         display: block;
         margin: 0 auto;
+        max-width: 1280px;
 }
 .swiper-slide {
         position: relative;
@@ -34,8 +35,11 @@
                 line-height: 1.18;
         }
         @include desktop {
-                left: 345px;
+                right: 0;
+                left: 0;
                 top: 326px;
+                bottom: 0;
+                margin: auto;
         }
 }
 
@@ -59,8 +63,11 @@
                 line-height: 1.18;
         }
         @include desktop {
-                left: 345px;
+                right: 0;
+                left: 0;
                 top: 326px;
+                bottom: 0;
+                margin: auto;
         }
 
 }
@@ -86,8 +93,11 @@
                 line-height: 1.18;
         }
         @include desktop {
-                left: 345px;
+                right: 0;
+                left: 0;
                 top: 326px;
+                bottom: 0;
+                margin: auto;
         }
 }
 
