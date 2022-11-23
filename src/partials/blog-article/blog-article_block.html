@@ -7,10 +7,23 @@
                 <p class="blog-article-title-top-second">Updated on September 21, 2022</p>
             </div>
             <div class="blog-article-cover-top">
-                <!-- <img class="blog-article-top-img" width="387" height="336" src="./images/Rectangle4279-1x.jpg" alt=""> -->
-                <img class="blog-article-top-img" srcset="./images/blog/headset-desc-1x.jpg,
-                ./images/blog/headset-desc-2x.jpg" 
-                src="./images/blog/headset-desc-1x.jpg" alt="Product" class="sale__img" />
+                <picture class="blog-article-top-img">
+                    
+                    <source srcset=" ./images/blog-article/blog-article-desk-1x.jpg 1x,
+                ./images/blog-article/blog-article-desk-2x.jpg 2x"
+                media="(min-width: 1280px)" 
+                >
+                
+                <source srcset="./images/blog/headset-tab-1x.jpg 1x,
+                ./images/blog/headset-tab-2x.jpg 2x"
+                media="(min-width: 768px)" >
+
+                <source srcset="./images/blog/headset-mob-1x.jpg 1x,
+                ./images/blog/headset-mob-2x.jpg 2x"
+                media="(min-width: 480px)"
+                >
+                <img src="./images/blog/headset-desc-1x.jpg" alt="Product">
+            </picture>
                 <div class="blog-article-top-text">
                     <p>Learn how to choose an amazing gaming headset with this checklist of just 9 surprisingly simple
                         steps.</p>
@@ -23,9 +36,6 @@
                         answered. After you complete the checklist, you’ll have a much better idea on what to look for
                         in a gaming headset</p>
                 </div>
-                <!-- <picture>
-            <source srcset="./images/Rectangle4279-1x.jpg 1x, ./images/Rectangle4279-2x.jpg 2x media"=(min-width:1200px)">
-        </picture> -->
         </section>
     </div>
     </div>
