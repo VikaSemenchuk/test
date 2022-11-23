@@ -1,25 +1,49 @@
-.section-title-line::after {
-    content: '';
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    left: 0;
-    top: 30;
-    width: 100vw;
-    height: 90px;
+.sale__box {
+    position: relative;
+}
+.line-1 {
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url(../images/frame-4527.svg);
-    // background-image: url(../images/icon-title-line/sale-desk-bottom.svg),
-    // url(../images/icon-title-line/sale-desk-top.svg);
-
-    @include tablet {
-        
-        
-        top: 150;
+    top: 42;
+    left: -40;
+    height: 71px;
+    width: 100vw;
+    position: absolute;
+    content: "";
+    background-image: url(../images/icon-title-line/sale-desk-bottom.svg);
+    @media (max-width: 1279px) {
+        left: -70;
+        top: -70;
+        width: 200vw;
     }
+    @media (max-width: 767px) {
+       transform: scaleY(0.5);
+        height: 71px;
+        width: 200vw;
+        top: -65;
+        left: -180;
+    }
+}
 
-    
+.line-2 {
+    background-repeat: no-repeat;
+    top: 50;
+    left: -40;
+    height: 71px;
+    width: 100vw;
+    position: absolute;
+    content: "";
+    background-image: url(../images/icon-title-line/sale-desk-top.svg);
 
+    @media (max-width: 1279px) {
+        left: -74;
+        top: -60;
+
+    }
+    @media (max-width: 767px) {
+        transform: scaleY(0.5);
+        height: 71px;
+        width: 200vw;
+        top: -60;
+        left: -185;
+    }
 }

@@ -73,51 +73,51 @@ li {
     padding-left: 102px;
   }
 }
-.sale__box {
-    position: relative;
-}
-.line-1 {
-    background-repeat: no-repeat;
-    top: 42;
-    left: -40;
-    height: 71px;
-    width: 100vw;
-    position: absolute;
-    content: "";
-    background-image: url(../images/icon-title-line/sale-desk-bottom.svg);
-    @media (max-width: 1279px) {
-        left: -70;
-    }
-    @media (max-width: 767px) {
-       transform: scaleY(0.5);
-        height: 71px;
-        width: 200vw;
-        top: -5;
-        left: -180;
-    }
-}
+// .sale__box {
+//     position: relative;
+// }
+// .line-1 {
+//     background-repeat: no-repeat;
+//     top: 42;
+//     left: -40;
+//     height: 71px;
+//     width: 100vw;
+//     position: absolute;
+//     content: "";
+//     background-image: url(../images/icon-title-line/sale-desk-bottom.svg);
+//     @media (max-width: 1279px) {
+//         left: -70;
+//     }
+//     @media (max-width: 767px) {
+//        transform: scaleY(0.5);
+//         height: 71px;
+//         width: 200vw;
+//         top: -65;
+//         left: -180;
+//     }
+// }
 
-.line-2 {
-    background-repeat: no-repeat;
-    top: 50;
-    left: -40;
-    height: 71px;
-    width: 100vw;
-    position: absolute;
-    content: "";
-    background-image: url(../images/icon-title-line/sale-desk-bottom.svg);
+// .line-2 {
+//     background-repeat: no-repeat;
+//     top: 50;
+//     left: -40;
+//     height: 71px;
+//     width: 100vw;
+//     position: absolute;
+//     content: "";
+//     background-image: url(../images/icon-title-line/sale-desk-top.svg);
 
-    @media (max-width: 1279px) {
-        left: -70;
-    }
-    @media (max-width: 767px) {
-        transform: scaleY(0.5);
-        height: 71px;
-        width: 200vw;
-        top: -1;
-        left: -184;
-    }
-}
+//     @media (max-width: 1279px) {
+//         left: -70;
+//     }
+//     @media (max-width: 767px) {
+//         transform: scaleY(0.5);
+//         height: 71px;
+//         width: 200vw;
+//         top: -60;
+//         left: -185;
+//     }
+// }
 
 .sale__img {
   display: block;
