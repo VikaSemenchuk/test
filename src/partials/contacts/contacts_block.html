@@ -1,98 +1,112 @@
-<section class="contact ">
-<div class="container">
-  <h2 class="contact__title section-title-line">Сontacts</h2>
+<section class="contact">
+  <div class="container">
+    <h2 class="contact__title section-title-line">Сontacts</h2>
 
-  
-<picture>
-  <source srcset="./images/contacts/rectangle@1x.mob.jpg 1x, ./images/contacts/rectangle@2x.mob.jpg 2x"
-    media="(min-width:480px)" />
-  <source srcset="./images/contacts/rectangle@1x.tab.jpg 1x, ./images/contacts/rectangle@2x.tab.jpg 2x"
-  media="(min-width:768px)"/>
-  <source srcset="./images/contacts/rectangle@1x.dek.jpg 1x, ./images/contacts/rectangle@2x.dek.jpg 2x" 
-  media="(min-width:1280px)"/>
-  <img class="contact__img" src="./images/contacts/rectangle@1x.mob.jpg" alt="illuminated neon gaming keyboard and gamepad"/>
-</picture>
-  
- 
+    <picture>
+      <source
+        srcset="
+          ./images/contacts/rectangle@1x.mob.jpg 1x,
+          ./images/contacts/rectangle@2x.mob.jpg 2x
+        "
+        media="(min-width:480px)"
+      />
+      <source
+        srcset="
+          ./images/contacts/rectangle@1x.tab.jpg 1x,
+          ./images/contacts/rectangle@2x.tab.jpg 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/contacts/rectangle@1x.dek.jpg 1x,
+          ./images/contacts/rectangle@2x.dek.jpg 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <img
+        class="contact__img"
+        src="./images/contacts/rectangle@1x.mob.jpg"
+        alt="illuminated neon gaming keyboard and gamepad"
+      />
+    </picture>
+
     <div class="contact__content">
-      <p class="contact__text">In case of queries about order handling and/or delay, drop us an email at
-          <a href="malito:@shopforgamers.com" class="contact__text-email" > @shopforgamers.com</a></p>
-        
-            <div class="address">
-                <address class="address__email">
-                    <h4 class="contact-form__subtitle">Email</h4>
-                    <a href="malito:sfg.info@gmail.com" class="contact-form__contact">sfg.info@gmail.com</a>
-                </address>
-                <address class="address__number">
-                    <h4 class="contact-form__subtitle">Phone number</h4> 
-                    <div class="contact-form__telefone">
-                      <a href="tel:+38 (093) 643 22 88" class="contact-form__contact">+38 (093) 643 22 88</a></div>
-                    <div class="contact-form__telefone">
-                      <a href="tel:+38 (050) 345 44 23" class="contact-form__contact">+38 (050) 345 44 23</a></div>
-                   
-                </address>
-            </div>
-  
- 
-        
-        <div  class="contact-form">
-            <h3 class="contact-form__title"> CONTACT US</h3>
-    
-            <form class="contact-form__form">
-             <div class="contact-form__div">
-                 <label class="contact-form__lable">
-                     
-                 <input type="text" 
-                 name="name" 
-                 id="name" 
-                 placeholder="Name"
-                 class="contact-form__input">
-                    </label>
-             </div>
-              
-               <div class="contact-form__div">
-                 <label  class="contact-form__lable">
-                  <input
-                  type="email" 
-                  name="email" 
-                  id="email" 
-                  placeholder="Email"
-                  class="contact-form__input">
-                     </label>
-               </div>
-               
-               <div class="contact-form__div">
-                 <label  class="contact-form__lable">
-                     <span class="contact-form__text">Leave your message</span>
-                     <textarea  class="contact-form__modal-coment" 
-                     name="comment" 
-                     cols="20" ></textarea>
-                    </label>
-               </div>
-               
-            </form>
-        </div>
-         
-        
- </div>
- <div class="contact__btn">
-  <button  type="button"  class="contact-form__btn" data-modal-open >
-      SEND
-  </button>
-</div>
-</div>
-    
-     <!--<div class="modal-contact is-hidden " data-modal>
-         <button type="button" class="modal-contact__btn-close">
-             <svg  width="11.25px" height="11.25px" class="modal__svg">
-                 <use href="./images/icon.svg#icon-close"></use>
-             </svg>
-         </button>
-        <p class="modal-contact__text">Thank you 
-         for your message!
-         We will contact you 
-         soon!</p>
-         <button  type="button"  class="modal-contact__btn-ok">ok</button>
-     </div>
-     <script src="./js/modal.js"></script>-->
- </section>
+      <p class="contact__text">
+        In case of queries about order handling and/or delay, drop us an email
+        at
+        <a href="malito:@shopforgamers.com" class="contact__text-email">
+          @shopforgamers.com</a
+        >
+      </p>
+
+      <div class="address">
+        <address class="address__email">
+          <h4 class="contact-form__subtitle">Email</h4>
+          <a href="malito:sfg.info@gmail.com" class="contact-form__contact"
+            >sfg.info@gmail.com</a
+          >
+        </address>
+        <address class="address__number">
+          <h4 class="contact-form__subtitle">Phone number</h4>
+          <div class="contact-form__telefone">
+            <a href="tel:+38 (093) 643 22 88" class="contact-form__contact"
+              >+38 (093) 643 22 88</a
+            >
+          </div>
+          <div class="contact-form__telefone">
+            <a href="tel:+38 (050) 345 44 23" class="contact-form__contact"
+              >+38 (050) 345 44 23</a
+            >
+          </div>
+        </address>
+      </div>
+
+      <div class="contact-form">
+        <h3 class="contact-form__title">CONTACT US</h3>
+
+        <form class="contact-form__form">
+          <div class="contact-form__div">
+            <label class="contact-form__lable">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                class="contact-form__input"
+              />
+            </label>
+          </div>
+
+          <div class="contact-form__div">
+            <label class="contact-form__lable">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                class="contact-form__input"
+              />
+            </label>
+          </div>
+
+          <div class="contact-form__div">
+            <label class="contact-form__lable">
+              <span class="contact-form__text">Leave your message</span>
+              <textarea
+                class="contact-form__modal-coment"
+                name="comment"
+                cols="20"
+              ></textarea>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="contact__btn">
+      <button type="button" class="contact-form__btn" data-contact-modal-open>
+        SEND
+      </button>
+    </div>
+  </div>
+</section>
