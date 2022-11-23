@@ -1,6 +1,6 @@
-<div class="backdrop is-hidden" data-contactModal>
+<div class="backdrop is-hidden" data-modal>
   <div class="contact-modal animate__animated animate__tada">
-    <button type="button" class="modal__close-btn" data-contactModal-close>
+    <button type="button" class="modal__close-btn">
       <svg class="modal__close-icon" width="31" height="31">
         <use href="/src/images/icons.svg#icon-close"></use>
       </svg>
@@ -10,6 +10,8 @@
       for your message!<br />
       We will contact you soon!
     </p>
-    <button type="button" class="contact-modal__btn">OK</button>
+    <button type="button" class="contact-modal__btn" data-modal-close>
+      OK
+    </button>
   </div>
 </div>

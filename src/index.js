@@ -15,12 +15,15 @@
   });
 })();
 
-{/* <include src="./js/contact-modal.js"></include> */}
-
+{
+  /* <include src="./js/contact-modal.js"></include> */
+}
 
 // @import './js/contact-modal.js';
 
-{/* <script src="./js/contact-modal.js"></script> */}
+{
+  /* <script src="./js/contact-modal.js"></script> */
+}
 
 (() => {
   const refs = {
@@ -38,3 +41,7 @@
 })();
 
 import './js/swiper-slider';
+
+import './js/contact-modal';
+import './js/take-order-add';
+import './js/take-order-buy';
