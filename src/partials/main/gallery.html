@@ -6,11 +6,14 @@
         <ul class="swiper-wrapper">
           <!-- Slides -->
           <li class="swiper-slide">
-            <img src="../../images/gallery/banner-one-1x.jpg" alt="gaming keyboard" width="1280">
-            <p class="banner__one">
-              One place for<br />
-              everything you want
-            </p>
+            <picture>
+              <source srcset="
+                ../../images/gallery/banner-one-1x.jpg 1x,
+                ../../images/gallery/banner-one-2x.jpg 2x
+                " media="(min-width: 1170px)">
+              <img src="../../images/gallery/banner-one-1x.jpg" alt="gaming keyboard" width="1280">
+            </picture>
+            <p class="banner__one">One place for<br />everything you want</p>
           </li>
           <li class="swiper-slide">
             <h1 class="banner__two">
