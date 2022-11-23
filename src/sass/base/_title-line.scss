@@ -1,53 +1,25 @@
-.line__box {
-    position: relative;
+.section-title-line::after {
+    content: '';
+    position: absolute;
     padding: 0;
     margin: 0;
-    height: 3px;
-  }
-
-.line-1 {
-    padding: 0;
-    margin: 0;
-
+    left: 0;
+    top: 30;
+    width: 100vw;
+    height: 90px;
     background-repeat: no-repeat;
     background-position: center;
-    // top: 42;
-    // left: -40;
-    height: 71px;
-    width: 100vw;
-    position: absolute;
-    content: "";
-    // background-image: url(../images/vector21.svg);
+    background-size: contain;
+    background-image: url(../images/frame-4527.svg);
+    // background-image: url(../images/icon-title-line/sale-desk-bottom.svg),
+    // url(../images/icon-title-line/sale-desk-top.svg);
 
-    // @media (max-width: 768px) {
-    //     left: -70;
-    // }
-
-    // @media (max-width: 320px) {
-    //     left: -70;
-    // }
-}
-
-.line-2 {
-    padding: 0;
-    margin: 0;
-
-    background-repeat: no-repeat;
-    background-position: center;
-
-    // top: 50;
-    // left: -40;
-    height: 71px;
-    width: 100vw;
-    position: absolute;
-    content: "";
-    // background-image: url(../images/vector22.svg);
-
-    @media (max-width: 768px) {
-        left: -70;
+    @include tablet {
+        
+        
+        top: 150;
     }
 
-    @media (max-width: 480px) {
-        left: -70;
-    }
+    
+
 }
