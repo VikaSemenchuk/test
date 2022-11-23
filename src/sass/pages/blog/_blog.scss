@@ -23,6 +23,7 @@
   line-height: 1.16;
   color: #fff;
   margin-bottom: 31px;
+  margin-top: 40px;
 
   @media screen and (min-width: 768px) {
     font-weight: 500;
@@ -30,12 +31,20 @@
     line-height: 1.17;
     margin-left: 59px;
     margin-bottom: 67px;
+    margin-top: 120px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-left: 62px;
     margin-bottom: 75px;
   }
+}
+
+.blog-title::after {
+  content: '';
+  background-image: url(../images/blog/headset-mob-1x.jpg);
+  max-width: 320px;
+  display: block;
 }
 
 .blog__photo-title-desc {
@@ -51,6 +60,10 @@
 
   max-width: 692px;
 }
+
+// .blog__mob-img {
+//   background-image: url(../images/blog/headset-desc-1x.jpg);
+// }
 
 .blog__child-desc {
   margin-bottom: 24px;
@@ -94,10 +107,6 @@
   @media screen and (min-width: 768px) {
     border-radius: 12px;
   }
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin-bottom: 16px;
-  }
 }
 
 .blog-container__desc {
@@ -140,6 +149,10 @@
   }
 }
 
+.blog__tab-text {
+  margin-top: auto;
+} 
+
 .blog__text-text {
   font-weight: 400;
   font-size: 16px;
@@ -172,4 +185,20 @@
 
 .blog__text-link {
   color: #86E543;
+}
+
+.blog__svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+  margin-bottom: 40px;
+}
+
+.blog__svg {
+  margin-right: 16px;
+}
+
+.blog__svg-last {
+  margin-right: 0;
 }
