@@ -48,28 +48,18 @@
         
         background: linear-gradient(270deg, #03FE8F 4.61%, #EBDCFF 57.91%, #FF98F3 92.2%);        background-clip: text;
         color: transparent;
-
-        
-        @media screen and (min-width:480px) {
-        width: 257px;
-        height: 56px;
-        @include font(600, 24px, 1.17, 0.06em)
-                
+        @include tablet {
+                left: 41px;
+                top: 352px;
+                max-width: 596px;
+                font-size: 56px;
+                line-height: 1.18;
         }
-        
-        @media screen and (min-width:768px) {
-                
-        width: 768px;
-        height: 498px;
-        @include font(600, 54px, 1.17, 0.06em)
+        @include desktop {
+                left: 345px;
+                top: 326px;
         }
 
-        @media screen and (min-width: 1280px) {
-                width: 596px;
-                height: 132px;
-                @include font(900, 56px, 1.36, 0.06em)
-                
-        }
 }
 
 .banner__three {
@@ -85,26 +75,16 @@
         background: linear-gradient(270deg, #FFFFFF 13.26%, #693CF9 60.87%, #F475EB 107.89%);        background-clip: text;
         color: transparent;
 
-        
-        @media screen and (min-width:480px) {
-        width: 257px;
-        height: 56px;
-        @include font(600, 24px, 1.17, 0.06em)
-                
+        @include tablet {
+                left: 41px;
+                top: 352px;
+                max-width: 596px;
+                font-size: 56px;
+                line-height: 1.18;
         }
-        
-        @media screen and (min-width:768px) {
-                
-        width: 768px;
-        height: 498px;
-        @include font(600, 54px, 1.17, 0.06em)
-        }
-
-        @media screen and (min-width: 1280px) {
-                width: 596px;
-                height: 132px;
-                @include font(900, 56px, 1.36, 0.06em)
-                
+        @include desktop {
+                left: 345px;
+                top: 326px;
         }
 }
 
