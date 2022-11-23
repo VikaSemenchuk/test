@@ -56,6 +56,78 @@
         }
 }
 
+.banner__two {
+        position: absolute;
+        left: 24px;
+        top: 405px;
+        max-width: 257px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.17;
+        text-align: left;
+        
+        background: linear-gradient(270deg, #03FE8F 4.61%, #EBDCFF 57.91%, #FF98F3 92.2%);        background-clip: text;
+        color: transparent;
+
+        
+        @media screen and (min-width:480px) {
+        width: 257px;
+        height: 56px;
+        @include font(600, 24px, 1.17, 0.06em)
+                
+        }
+        
+        @media screen and (min-width:768px) {
+                
+        width: 768px;
+        height: 498px;
+        @include font(600, 54px, 1.17, 0.06em)
+        }
+
+        @media screen and (min-width: 1280px) {
+                width: 596px;
+                height: 132px;
+                @include font(900, 56px, 1.36, 0.06em)
+                
+        }
+}
+
+.banner__three {
+        position: absolute;
+        left: 24px;
+        top: 405px;
+        max-width: 257px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.17;
+        text-align: left;
+        
+        background: linear-gradient(270deg, #FFFFFF 13.26%, #693CF9 60.87%, #F475EB 107.89%);        background-clip: text;
+        color: transparent;
+
+        
+        @media screen and (min-width:480px) {
+        width: 257px;
+        height: 56px;
+        @include font(600, 24px, 1.17, 0.06em)
+                
+        }
+        
+        @media screen and (min-width:768px) {
+                
+        width: 768px;
+        height: 498px;
+        @include font(600, 54px, 1.17, 0.06em)
+        }
+
+        @media screen and (min-width: 1280px) {
+                width: 596px;
+                height: 132px;
+                @include font(900, 56px, 1.36, 0.06em)
+                
+        }
+}
+
 .swiper-pagination-bullets {
         margin: 0 
 }
