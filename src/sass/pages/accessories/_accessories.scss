@@ -1,3 +1,11 @@
+.line-1 {
+    background-image: url('../images/icon-title-line/accessories-desk-top.svg');
+}
+
+.line-2 {
+  background-image: url('../images/icon-title-line/accessories-desk-bottom.svg');
+}
+
 .swiper-wrapper {
         margin-bottom: 32px;
 }
@@ -273,4 +281,20 @@
 .accessories__library {
   padding: 8px;
   width: 285px;
+}
+
+.blog__svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+  margin-bottom: 40px;
+}
+
+.blog__svg {
+  margin-right: 16px;
+}
+
+.blog__svg-last {
+  margin-right: 0;
 }
