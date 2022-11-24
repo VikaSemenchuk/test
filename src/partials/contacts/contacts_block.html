@@ -1,54 +1,84 @@
 <section class="contact">
   <div class="container">
     <h2 class="contact__title section-title-line">Сontacts</h2>
-
+    <!-- <div class="back"></div> -->
     <picture>
       <source
         srcset="
-          ./images/contacts/rectangle@1x.mob.jpg 1x,
-          ./images/contacts/rectangle@2x.mob.jpg 2x
+          ./images/contacts/rectangle@11x.mob.jpg 1x,
+          ./images/contacts/rectangle@22x.mob.jpg 2x
         "
         media="(min-width:480px)"
       />
       <source
         srcset="
-          ./images/contacts/rectangle@1x.tab.jpg 1x,
-          ./images/contacts/rectangle@2x.tab.jpg 2x
+          ./images/contacts/rectangle@11x.tab.jpg 1x,
+          ./images/contacts/rectangle@22x.tab.jpg 2x
         "
         media="(min-width:768px)"
       />
       <source
         srcset="
-          ./images/contacts/rectangle@1x.dek.jpg 1x,
-          ./images/contacts/rectangle@2x.dek.jpg 2x
+          ./images/contacts/rectangle@11x.desk.jpg 1x,
+          ./images/contacts/rectangle@22x.desk.jpg 2x
         "
         media="(min-width:1280px)"
       />
       <img
-        class="contact__img"
-        src="./images/contacts/rectangle@1x.mob.jpg"
+        src="./images/contacts/rectangle@11x.mob.jpg"
         alt="illuminated neon gaming keyboard and gamepad"
+        class="contact__img"
       />
     </picture>
 
     <div class="contact__content">
-      <p class="contact__text">
-        In case of queries about order handling and/or delay, drop us an email
-        at
-        <a href="malito:@shopforgamers.com" class="contact__text-email">
-          @shopforgamers.com</a
-        >
-      </p>
+      <div class="contact-text__wrap">
+        <p class="contact__text">
+          In case of queries about order handling and/or delay, drop us an email
+          at
+        </p>
+        <p class="contact__text">
+          <a href="mailto:@shopforgamers.com"> @shopforgamers.com</a>
+        </p>
+      </div>
+
+      <!-- ADDRESS -->
 
       <div class="address">
+        <address>
+          <h3 class="contact-form__subtitle">Email</h3>
+          <ul class="address__email">
+            <li>
+              <a href="mailto:sfg.info@gmail.com" class="contact-form__contact"
+                >sfg.info@gmail.com</a
+              >
+            </li>
+          </ul>
+          <h3 class="contact-form__subtitle">Phone number</h3>
+          <ul>
+            <li>
+              <a href="tel:+380936432288" class="contact-form__contact"
+                >+38 (093) 643 22 88</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380503454423" class="contact-form__contact"
+                >+38 (050) 345 44 23</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+
+      <!-- <div class="address">
         <address class="address__email">
-          <h4 class="contact-form__subtitle">Email</h4>
-          <a href="malito:sfg.info@gmail.com" class="contact-form__contact"
+          <h2 class="contact-form__subtitle">Email</h2>
+          <a href="mailto:sfg.info@gmail.com" class="contact-form__contact"
             >sfg.info@gmail.com</a
           >
         </address>
         <address class="address__number">
-          <h4 class="contact-form__subtitle">Phone number</h4>
+          <h2 class="contact-form__subtitle">Phone number</h2>
           <div class="contact-form__telefone">
             <a href="tel:+38 (093) 643 22 88" class="contact-form__contact"
               >+38 (093) 643 22 88</a
@@ -60,7 +90,7 @@
             >
           </div>
         </address>
-      </div>
+      </div> -->
 
       <div class="contact-form">
         <h3 class="contact-form__title">CONTACT US</h3>
