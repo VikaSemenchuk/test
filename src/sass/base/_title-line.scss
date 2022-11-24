@@ -6,7 +6,7 @@
     position: absolute;
 
     height: 71px;
-    width: 200vw;
+    width: 100vw;
     top: -65;
     left: -180;
     background-image: url(../images/icon-title-line/sale-desk-bottom.svg);
@@ -19,7 +19,7 @@
         
         left: -50;
         top: -70;
-        width: 200vw;
+        width: 100vw;
     }
     @include desktop {
         top: -64;
