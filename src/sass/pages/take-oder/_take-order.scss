@@ -1,58 +1,12 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #01383A;
-}
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-ul,
-ol {
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-
-.order.container {
-    width: 1280px;
-    padding: 120px 15px;
-    margin: 0 auto;
-}
+// .order.container {
+//     width: 1280px;
+//     padding: 120px 15px;
+//     margin: 0 auto;
+// }
 
 /* -------------Order Information-------------- */
 
-// .order {
-//     margin-top: 40px;
-//     @include tablet{
-//         margin-top: 120px;
-//     }
-// }
 .order-mob-section-title{
     font-weight: 600;
     font-size: 32px;
@@ -133,7 +87,6 @@ margin-bottom: 16px;
 
 
 // --------------------------------------------------
-// дописати картинки в секцію
 .order-infiormation {
     display: flex;
     gap: 121px;
@@ -240,20 +193,7 @@ margin-bottom: 16px;
     @include tablet {
         min-width: 590px;
     }
-
-    @include desktop {
-        // display: flex;
-        // flex-direction: column;
-    }
-
 }
-
-// .order-forms {
-//     margin-bottom: 40px;
-//     @include tablet{
-//         margin-bottom: 120px;
-//     }
-// }
 
 .order-form {
     max-width: 480px;
@@ -271,13 +211,15 @@ margin-bottom: 16px;
 
 .order-label {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.11;
 
     text-transform: capitalize;
 
     color: #FFFFFF;
-
+    @include tablet{
+        font-size: 18px;
+    }
 }
 
 .form-item {
@@ -289,7 +231,42 @@ margin-bottom: 16px;
     margin-bottom: 24px;
     outline: transparent;
     color: #fcfcfc;
+    font-size: 16px;
+    @include tablet{
+        font-size: 18px;
+    }
 }
+.form-item > option{
+    background-color: #01383A;
+}
+
+.form-item.dropdown{
+    appearance: none;
+}
+
+.order-select-wraper::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-80%);
+
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 10px 0 10px;
+    border-color: #ffffff transparent transparent transparent;
+    border-radius: 3px;
+
+
+    pointer-events: none;
+}
+
+.order-select-wraper{
+    position: relative;
+}
+
 
 .order-form-thumb {
     position: relative;
@@ -302,6 +279,10 @@ margin-bottom: 16px;
 }
 
 .form-item:focus+.order-label.input {
+    transform: translateY(-100%);
+}
+
+.form-item:not(:placeholder-shown)+.order-label.input {
     transform: translateY(-100%);
 }
 
@@ -332,6 +313,8 @@ margin-bottom: 16px;
     height: 40px;
     width: 100%;
 }
+
+
 
 .btn-buy {
     font-family: inherit;
