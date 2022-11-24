@@ -1,3 +1,20 @@
+.blog-mob-img {
+  margin-bottom: 8px;
+  background-image: 
+  url(/src/images/blog/headset-mob-1x.jpg);
+  
+background-repeat: no-repeat;
+height: 180px;
+background-position: center;
+background-size: cover;
+}
+
+.blog-container-mob {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .blog-container {
   @media screen and (min-width: 1280px) {
     display: none;
