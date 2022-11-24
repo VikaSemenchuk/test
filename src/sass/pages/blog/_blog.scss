@@ -1,20 +1,67 @@
-.blog-container {
+.blog__container-mob {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.blog__container-tab {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.blog__container-tab {
   @media screen and (min-width: 1280px) {
     display: none;
   }
 }
 
-.blog-container-desc {
+.blog__container-desc {
   @media screen and (max-width: 1279px) {
     display: none;
   }
 }
 
-.blog__text-desc {
-  display: flex;
-  justify-content: space-between;
-
+.blog__article-mob {
   margin-bottom: 24px;
+}
+
+.blog__container-tab,
+.blog__container-desc {
+  margin-bottom: 40px;
+}
+
+.blog__img-mob-headset {
+  margin-bottom: 8px;
+  background-image:
+    url(/src/images/blog/headset-mob-1x.jpg);
+
+  background-repeat: no-repeat;
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+}
+
+.blog__img-mob-monitor {
+  margin-bottom: 8px;
+  background-image:
+    url(/src/images/blog/monitor-mob-1x.jpg);
+
+  background-repeat: no-repeat;
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+}
+
+.blog__img-mob-mouse {
+  margin-bottom: 8px;
+  background-image:
+    url(/src/images/blog/mouse-mob-1x.jpg);
+
+  background-repeat: no-repeat;
+  height: 180px;
+  background-position: center;
+  background-size: cover;
 }
 
 .blog-title {
@@ -24,8 +71,9 @@
   color: #fff;
   margin-bottom: 31px;
   margin-top: 40px;
+}
 
-  @media screen and (min-width: 768px) {
+.blog-title-tab {
     font-weight: 500;
     font-size: 56px;
     line-height: 1.17;
@@ -34,40 +82,12 @@
     margin-top: 120px;
   }
 
-  @media screen and (min-width: 1280px) {
-    margin-left: 62px;
-    margin-bottom: 75px;
-  }
-}
-
-.blog-title::after {
-  content: '';
-  background-image: url(../images/blog/headset-mob-1x.jpg);
-  max-width: 320px;
-  display: block;
-}
-
-.blog__photo-title-desc {
-  @media screen and (max-width: 1279px) {
-    display: none;
-  }
-
-  font-weight: 500;
+.blog-title-desc {
   font-size: 56px;
-  line-height: 1;
-  color: #fff;
-  margin-bottom: 52px;
-
-  max-width: 692px;
-}
-
-// .blog__mob-img {
-//   background-image: url(../images/blog/headset-desc-1x.jpg);
-// }
-
-.blog__child-desc {
-  margin-bottom: 24px;
-}
+  margin-bottom: 75px;
+  margin-top: 120px;
+  margin-left: 102px;
+} 
 
 .blog__photo-title {
   font-weight: 500;
@@ -77,80 +97,77 @@
   margin-bottom: 16px;
 
   max-width: 692px;
+}
 
-  @media screen and (min-width: 768px) {
+.blog__photo-title-tab,
+.blog__photo-title-desc {
     font-size: 56px;
     line-height: 1;
-  }
-
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
 }
 
-.blog__tab-content {
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  position: relative;
+.blog__photo-title-desc {
+  margin-bottom: 52px;
 }
 
-.line-box {
-  position: relative;
+.blog__photo-title-monitor {
+  margin-bottom: 24px;
 }
 
-.blog-photo {
-  margin-bottom: 8px;
-
-  @media screen and (min-width: 768px) {
-    border-radius: 12px;
-  }
-}
-
-.blog-container__desc {
+.blog__img-tab {
   display: flex;
   justify-content: space-between;
 }
 
-.blog-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
+.blog__text-text-tab {
+  margin-top: auto;
+}
 
-  @media screen and (min-width: 768px) {
-    font-size: 24px;
-  }
+.blog-photo {
+    margin-bottom: 8px;
+    border-radius: 12px;
 }
 
 .blog__text-name {
   color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+}
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 8px;
-  }
+.blog__text-name-mob {
+  margin-bottom: 8px;
+}
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin-bottom: 32px;
-    max-width: 132px;
-  }
+.blog__text-name-tab {
+  font-size: 24px;
+  margin-bottom: 32px;
+  max-width: 132px;
+}
+
+.blog__text-name-desc {
+  max-width: 249px;
+  font-size: 24px;
 }
 
 .blog__text-date {
   color: #8D9289;
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    max-width: 252px;
-  }
-
-  @media screen and (max-width: 1279px) {
-    margin-bottom: 16px;
-  }
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
 }
 
-.blog__tab-text {
-  margin-top: auto;
+.blog__text-date-mob {
+  margin-bottom: 16px;
+}
+
+.blog__text-date-tab {
+  font-size: 24px;
+  margin-bottom: 16px;
+  max-width: 252px;
+}
+
+.blog__text-date-desc {
+  font-size: 24px;
 }
 
 .blog__text-text {
@@ -160,31 +177,45 @@
 
   color: #fff;
   margin-bottom: 8px;
+}
 
-  @media screen and (min-width: 768px) {
-    font-size: 24px;
-    line-height: 1.16;
-    max-width: 688px;
+.blog__text-text-tab,
+.blog__text-text-desc {
+  font-size: 24px;
+  line-height: 1.16;
+}
 
-    margin-bottom: 16px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    max-width: 692px;
-  }
+.blog__text-text-desc {
+  max-width: 693px;
 }
 
 .blog__link-container {
   text-align: end;
-  margin-bottom: 24px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
-  }
 }
+
 
 .blog__text-link {
   color: #86E543;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: none;
+}
+
+.blog__text-link-tab,
+.blog__text-link-desc {
+  font-size: 24px;
+}
+
+.blog__photo-desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__text-text-desc {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 .blog__svg-container {
