@@ -1,0 +1,2 @@
+!function(){var t={openContactModalBtn:document.querySelector("[data-contact-modal-open]"),closeContactModalBtn:document.querySelector("[data-contact-modal-close]"),ContactModal:document.querySelector("[data-contact-modal]")};function o(){t.ContactModal.classList.toggle("is-hidden")}t.openContactModalBtn.addEventListener("click",o),t.closeContactModalBtn.addEventListener("click",o)}();
+//# sourceMappingURL=contacts.c0d20870.js.map
