@@ -23,18 +23,31 @@
 
   @include tablet {
     width: 100%;
+    height: auto;
   }
+}
+
+.contact__address {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .contact-form__telefone:not(:last-child) {
   padding-bottom: 8px;
 }
 
+.contact__mail {
+font-size: 16px;
+ line-height: 1.2;
+ color: #FFFFFF;
+}
+
 .contact__content {
   font-size: 16px;
-line-height: 1.2;
-color: #FFFFFF;
-  margin-top: 16px;
+ line-height: 1.2;
+ color: #FFFFFF;
+ margin-top: 16px;
   // padding-left: 16px;
 
   @media screen and(min-width:768px) {
@@ -196,10 +209,12 @@ color: #FFFFFF;
 }
 
 .contact-form__text {
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: #8d9289;
+  padding-bottom: 4px;
 
   @media screen and(min-width:768px) {
     font-size: 18px;
