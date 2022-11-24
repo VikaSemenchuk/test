@@ -1,3 +1,56 @@
+// .contacts__bgn-image--out-container {
+//   display: none;
+
+//   @media screen and (max-width:479px){
+//   width: 320px;
+//   height: 285px;
+//   background-image: url('../images/contacts/rectangle@11x.mob.jpg');
+//   background-size: contain;
+//   background-position: center;
+//   background-repeat: no-repeat;  
+
+//   @include double-pixel {
+//     background-image: url('../images/contacts/rectangle@22x.mob.jpg');
+//   }  
+//   }}   
+
+.contacts__bgn-image {
+  max-width: 100%;
+  height: 285px;
+  background-image: url('../images/contacts/rectangle@11x.mob.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include double-pixel {
+    background-image: url('../images/contacts/rectangle@22x.mob.jpg');
+  }
+
+   @media screen and (max-width:479px){
+  width: 320px;
+  height: 285px;
+  background-image: url('../images/contacts/rectangle@11x.mob.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+    
+  }
+
+  @include tablet {
+    background-image: url('../images/contacts/rectangle@11x.tab.jpg');
+    @include double-pixel {
+      background-image: url('../images/contacts/rectangle@22x.tab.jpg');
+    }
+  }
+
+  @include desktop {
+    max-width: 1200px;
+    background-image: url('../images/contacts/rectangle@11x.desk.jpg');
+    @include double-pixel {
+      background-image: url('../images/contacts/rectangle@22x.desk.jpg');
+  
+}}}
+
 .contact-form__telefone:not(:last-child) {
   padding-bottom: 8px;
 }
