@@ -104,17 +104,17 @@
       <form class="order-form">
         <div class="order-form-part-one">
           <div class="order-form-thumb">
-            <input class="order-input form-item" type="text" id="name" name="username" placeholder="">
+            <input class="order-input form-item" type="text" id="name" name="username" placeholder=" ">
             <label class="order-label input" for="name">Name</label>
           </div>
   
           <div class="order-form-thumb">
-            <input class="order-input form-item" type="email" id="mail" name="mail" placeholder="">
+            <input class="order-input form-item" type="email" id="mail" name="mail" placeholder=" ">
             <label class="order-label input" for="mail">Email</label>
           </div>
   
-          <details class="order-dropdown">
-            <summary>Color Option</summary>
+          <!-- <details class="order-dropdown">
+            <summary class="order-dropdown-list">Color Option</summary>
             <p>"Orange">K9D Black Orange</p>
             <p>"Gray">K9D Silver Gray</p>
             <p>"White">K9U White Blue</p>
@@ -126,28 +126,33 @@
   
           <details class="order-dropdown">
             <summary>Payment</summary>
-          </details>
-          <!-- <label class="order-label" for="color">Color Option</label> -->
-          <!-- <select class="form-item" id="color" name="color">
-                              <option value="Orange">K9D Black Orange</option>
-                              <option value="Gray">K9D Silver Gray</option>
-                              <option value="White">K9U White Blue</option>
-                          </select> -->
+          </details> -->
+
+          <div class="order-select-wraper">
+            <select class="form-item dropdown" name="color">
+              <option value="color">Color Option</option>
+              <option value="Orange">K9D Black Orange</option>
+              <option value="Gray">K9D Silver Gray</option>
+              <option value="White">K9U White Blue</option>
+            </select>
+          </div>
   
-          <!-- <label class="order-label" for="number">Quantity</label> -->
-          <!-- <select class="form-item" id="number" name="number">
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                          </select> -->
+          <div class="order-select-wraper">
+            <select class="form-item dropdown" name="number">
+              <option value="quantity">Quantity</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
   
-          <!-- <label class="order-label" for="payment">Payment</label> -->
-          <!-- <select class="form-item" id="payment" name="payment">
-                              <option value="paypal">PayPal</option>
-                              <option value="applepay">Apple Pay</option>
-                          </select> -->
+          <div class="order-select-wraper">
+            <select class="form-item dropdown" id="payment" name="payment">
+              <option value="payment">Payment</option>
+              <option value="paypal">PayPal</option>
+              <option value="applepay">Apple Pay</option>
+            </select>
+          </div>
         </div>
   
         <div class="order-form-part-two">
