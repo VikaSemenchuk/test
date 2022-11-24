@@ -23,6 +23,14 @@
 // li {
 //   list-style: none;
 // }
+
+.sale {
+  margin-bottom: 40px;
+  @include tablet {
+  margin-bottom: 120px;
+
+  }
+}
 .sale__grid {
   @media (min-width: 768px) {
     display: flex;
