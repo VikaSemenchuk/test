@@ -1,20 +1,5 @@
-// .contacts__bgn-image--out-container {
-//   display: none;
-
-//   @media screen and (max-width:479px){
-//   width: 320px;
-//   height: 285px;
-//   background-image: url('../images/contacts/rectangle@11x.mob.jpg');
-//   background-size: contain;
-//   background-position: center;
-//   background-repeat: no-repeat;  
-
-//   @include double-pixel {
-//     background-image: url('../images/contacts/rectangle@22x.mob.jpg');
-//   }  
-//   }}   
-
 .contacts__bgn-image {
+@media screen and (max-width:767px){
   max-width: 100%;
   height: 285px;
   background-image: url('../images/contacts/rectangle@11x.mob.jpg');
@@ -24,39 +9,32 @@
 
   @include double-pixel {
     background-image: url('../images/contacts/rectangle@22x.mob.jpg');
-  }
+}
+@media screen and (min-width:768px) {
+      display: none;
+    } 
+}}
 
-   @media screen and (max-width:479px){
-  width: 320px;
-  height: 285px;
-  background-image: url('../images/contacts/rectangle@11x.mob.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-    
+.contact__img {
+  @media screen and (max-width:767px) {
+    display: none;
   }
 
   @include tablet {
-    background-image: url('../images/contacts/rectangle@11x.tab.jpg');
-    @include double-pixel {
-      background-image: url('../images/contacts/rectangle@22x.tab.jpg');
-    }
+    width: 100%;
   }
-
-  @include desktop {
-    max-width: 1200px;
-    background-image: url('../images/contacts/rectangle@11x.desk.jpg');
-    @include double-pixel {
-      background-image: url('../images/contacts/rectangle@22x.desk.jpg');
-  
-}}}
+}
 
 .contact-form__telefone:not(:last-child) {
   padding-bottom: 8px;
 }
 
 .contact__content {
-  padding-left: 16px;
+  font-size: 16px;
+line-height: 1.2;
+color: #FFFFFF;
+  margin-top: 16px;
+  // padding-left: 16px;
 
   @media screen and(min-width:768px) {
     padding-left: 40px;
@@ -84,42 +62,6 @@
 
   }
 }
-
-// .back {
-
-//   background-image: url(./src/images/contacts/rectangle@11x.mob.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-
-
-//   @media (min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//     background-image: url(./src/images/contacts/rectangle@22x.mob.jpg);
-//   }
-
-
-// }
-
-// .contact__img {
-//   width: 320px;
-//   height: 346px;
-
-
-//   @media screen and(min-width:767px) {
-//     width: 688px;
-//     height: 346px;
-//   }
-
-//   @media screen and(min-width:768px) {
-//     width: 1200px;
-//     border-radius: 12px;
-
-//   }
-// }
-
-
 
 .contact-text__wrap {
   display: block;
