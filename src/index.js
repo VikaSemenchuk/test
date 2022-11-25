@@ -1,7 +1,7 @@
 import './js/menu';
 import './js/menu2';
 
-import './js/swiper-slider';
+// import './js/swiper-slider';
 
 import './js/contact-modal';
 
