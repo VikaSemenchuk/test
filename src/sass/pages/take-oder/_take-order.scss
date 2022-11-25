@@ -173,6 +173,17 @@ margin-bottom: 16px;
 }
 
 /* --------------Order Form------------- */
+.order-form__wrap {
+margin: 32px auto 0 auto;
+    @include tablet {
+    width: 590px;
+    margin: 48px auto 0 auto;  
+    } 
+    
+    @include desktop {
+        width: 100%;
+    }
+}
 
 .order-form-title {
     font-weight: 600;
@@ -190,17 +201,19 @@ margin-bottom: 16px;
 
 .order-form-part-one,
 .order-form-part-two {
-    @include tablet {
+    @include desktop {
         min-width: 590px;
     }
 }
 
 .order-form {
+    @media screen and (max-width: 767px) {
     max-width: 480px;
+}
 
-    @include tablet{
-        max-width: 523px;
-    }
+    // @include tablet{
+    //     max-width: 523px;
+    // }
 
     @include desktop {
         display: flex;
@@ -244,11 +257,11 @@ margin-bottom: 16px;
     appearance: none;
 }
 
-.order-select-wraper::after{
+.order-select-wraper::after {
     content: "";
     position: absolute;
     top: 50%;
-    right: 15px;
+    right: 0;
     transform: translateY(-80%);
 
     display: block;
@@ -258,12 +271,10 @@ margin-bottom: 16px;
     border-width: 14px 10px 0 10px;
     border-color: #ffffff transparent transparent transparent;
     border-radius: 3px;
-
-
     pointer-events: none;
 }
 
-.order-select-wraper{
+.order-select-wraper {
     position: relative;
 }
 
