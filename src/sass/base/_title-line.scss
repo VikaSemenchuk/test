@@ -26,6 +26,7 @@
         left: -40;
         height: 71px;
         width: 100vw;
+        max-width: 100%;
     }
 }
 
@@ -51,5 +52,6 @@
     @include desktop {
         top: -55;
         left: -40;
+        max-width: 100%;
     }
 }
