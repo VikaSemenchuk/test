@@ -1,131 +1,125 @@
 .hero {
-    padding: 180px 0 127px 0;
-    text-align: center;
+  padding: 180px 0 127px 0;
+  text-align: center;
 
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-color: $main-bgcolor;
-    background-image: 
-        url(/src/images/hero/fon-hero-1x.png),
-        url(/src/images/hero/mob-items-1x.png),
-        url(/src/images/hero/mob-hero-1x.jpg);
-        
-    background-repeat: no-repeat;
+  background-color: $main-bgcolor;
+  background-image: url(/src/images/hero/fon-hero-1x.png),
+    url(/src/images/hero/mob-items-1x.png),
+    url(/src/images/hero/mob-hero-1x.jpg);
 
-    background-position: right bottom 25px, right;
-    background-size: 304px, cover;
-    background-blend-mode: luminosity;
+  background-repeat: no-repeat;
 
-    background-position: right, right bottom 25px, right;
-    background-size:cover, 304px, cover;
-    background-blend-mode: normal, luminosity, normal;
+  background-position: right bottom 25px, right;
+  background-size: 304px, cover;
+  background-blend-mode: luminosity;
 
+  background-position: right, right bottom 25px, right;
+  background-size: cover, 304px, cover;
+  background-blend-mode: normal, luminosity, normal;
+
+  @include double-pixel {
+    background-image: url(/src/images/hero/fon-hero-1x.png),
+      url(/src/images/hero/mob-items-2x.png),
+      url(/src/images/hero/mob-hero-2x.jpg);
+  }
+  @include tablet {
+    padding: 154px 0 208px 0;
+
+    max-width: 768px;
+    text-align: start;
+
+    background-image: url(/src/images/hero/fon-hero-1x.png),
+      url(/src/images/hero/tab-items-1x.png),
+      url(/src/images/hero/tab-hero-1x.jpg);
+    background-position: right -50px top -50px, top 33px right,
+      right -50px top -50px;
+    background-size: cover, 379px, cover;
 
     @include double-pixel {
-    background-image: 
-        url(/src/images/hero/fon-hero-1x.png),
-        url(/src/images/hero/mob-items-2x.png),
-        url(/src/images/hero/mob-hero-2x.jpg);
+      background-image: url(/src/images/hero/fon-hero-1x.png),
+        url(/src/images/hero/tab-items-2x.png),
+        url(/src/images/hero/tab-hero-2x.jpg);
     }
-    @include tablet {
-        padding: 154px 0 208px 0;
+  }
 
-        max-width: 768px;
-        text-align: start;
+  @include desktop {
+    width: 100%;
+    max-width: 1280px;
+    padding: 180px 0 209px 0;
+    background-image: url(/src/images/hero/pc-hero-fon-1x.png),
+      url(/src/images/hero/pc-items-1x.png),
+      url(/src/images/hero/pc-hero-1x.jpg);
+    background-position: center bottom 20px, top 72px right 38px,
+      center bottom 20px;
+    background-size: cover, 668px, cover;
 
-        background-image: 
-            url(/src/images/hero/fon-hero-1x.png),
-            url(/src/images/hero/tab-items-1x.png),
-            url(/src/images/hero/tab-hero-1x.jpg);
-        background-position: right -50px top -50px, top 33px right, right -50px top -50px;
-        background-size:cover, 379px, cover;
-
-        @include double-pixel {
-            background-image: 
-                url(/src/images/hero/fon-hero-1x.png),
-                url(/src/images/hero/tab-items-2x.png),
-                url(/src/images/hero/tab-hero-2x.jpg);
-        }
+    @include double-pixel {
+      background-image: url(/src/images/hero/pc-hero-fon-1x.png),
+        url(/src/images/hero/pc-items-2x.png),
+        url(/src/images/hero/pc-hero-2x.jpg);
     }
-
-    @include desktop {
-        width: 100%;
-        max-width: 1280px;
-        padding: 180px 0 209px 0;
-        background-image: 
-            url(/src/images/hero/pc-hero-fon-1x.png),
-            url(/src/images/hero/pc-items-1x.png),
-            url(/src/images/hero/pc-hero-1x.jpg);
-        background-position: center bottom 20px, top 72px right 38px, center bottom 20px;
-        background-size:cover, 668px, cover;
-
-
-        @include double-pixel {
-            background-image: 
-                url(/src/images/hero/pc-hero-fon-1x.png),
-                url(/src/images/hero/pc-items-2x.png),
-                url(/src/images/hero/pc-hero-2x.jpg);
-                }
-        }
+  }
 }
 
 .hero__title {
-    margin: 0 auto 25px auto;
-    max-width: 247px;
+  margin: 0 auto 25px auto;
+  max-width: 247px;
 
-    font-weight: 600;
-    font-size: 32px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.18;
+  color: $text-color;
+
+  @include tablet {
+    margin: 0 auto 94px 0;
+    max-width: 388px;
+
+    font-size: 56px;
     line-height: 1.18;
-    color: $text-color;
+  }
 
-    @include tablet {
-        margin: 0 auto 94px 0;
-        max-width: 388px;
+  @include desktop {
+    margin: 0 auto 40px 0;
+    margin-left: 102px;
+    max-width: 515px;
 
-        font-size: 56px;
-        line-height: 1.18;
-    }
-
-    @include desktop {
-        margin: 0 auto 40px 0;
-        margin-left: 102px;
-        max-width: 515px;
-
-        font-size: 64px;
-        line-height: 1.17;
-    }
+    font-size: 64px;
+    line-height: 1.17;
+  }
 }
 
 .hero__btn {
-    padding: 16px 20px;
-    border: none;
-    border-radius: 16px;
-    
-    font-weight: 700;
-    font-size: 16px;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 16px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: right;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  background-color: $accent-color;
+  color: $main-bgcolor;
+
+  @include animation(box-shadow);
+
+  &:hover,
+  &:focus {
+    box-shadow: $button-boxshadow;
+  }
+
+  @include tablet {
+    font-size: 32px;
     line-height: 1.19;
-    text-align: right;
-    text-transform: uppercase;
-    cursor: pointer;
+  }
 
-    background-color: $accent-color;
-    color: $main-bgcolor;
-
-
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-
-    &:hover, &:focus {
-    box-shadow: button-boxshadow;
-    }
-
-    @include tablet {
-        font-size: 32px;
-        line-height: 1.19;
-    }
-
-    @include desktop {
-        margin-left: 102px;
-    }
+  @include desktop {
+    margin-left: 102px;
+  }
 }

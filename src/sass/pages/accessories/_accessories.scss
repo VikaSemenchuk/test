@@ -7,32 +7,31 @@
 // }
 
 .swiper-wrapper {
-        margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 .swiper-slide {
-        position: relative;
+  position: relative;
 }
 
 .swiper {
-        & .swiper-pagination {
-                position: relative;
-                bottom: 0;
-        }
-        & .swiper-pagination-bullet {
-                margin: 0;
-                width: 16px;
-                height: 16px;
-                opacity: 1;
-                background: #fff;
-
-        }
-        & .swiper-pagination-bullet-active {
-                width: 40px;
-                height: 16px;
-                opacity: 1;
-                background: #fff;
-                border-radius: 30px;
-        }
+  & .swiper-pagination {
+    position: relative;
+    bottom: 0;
+  }
+  & .swiper-pagination-bullet {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+    background: #fff;
+  }
+  & .swiper-pagination-bullet-active {
+    width: 40px;
+    height: 16px;
+    opacity: 1;
+    background: #fff;
+    border-radius: 30px;
+  }
 }
 
 .accessories__filter {
@@ -67,6 +66,8 @@
   border: 1px solid #86e543;
   border-radius: 16px;
   cursor: pointer;
+  transition: bakground-color $duration $timing-function,
+    color $duration $timing-function;
 }
 
 .accessories__btn:hover,
@@ -75,7 +76,7 @@
   color: #01383a;
 }
 
-.accessories__title {  
+.accessories__title {
   position: relative;
   margin-bottom: 27px;
   text-align: center;
@@ -83,13 +84,13 @@
   font-size: 24px;
   line-height: 1.16;
   color: #ffffff;
-@media screen and (min-width:480px) and (max-width:767px) {
-      padding-left: 90px;
-       text-align: left;
-}
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-left: 90px;
+    text-align: left;
+  }
 
   @media screen and (min-width: 768px) {
-     text-align: left;
+    text-align: left;
     margin-bottom: 27px;
     font-size: 56px;
     margin-bottom: 51px;
@@ -165,6 +166,7 @@
   overflow: hidden;
   width: 285px;
   height: 100%;
+  @include animation(box-shadow);
 
   .accessories__item:hover &,
   .accessories__item:focus & {
@@ -181,8 +183,7 @@
   border: 1px solid #86e543;
   border-radius: 12px;
   transform: translateY(100%);
-  transition: transform 250ms linear;
-  
+  @include animation(transform);
 
   .accessories__item:hover &,
   .accessories__item:focus & {

@@ -3,21 +3,20 @@
   padding: 25px 0;
 }
 
-.footer-container {  
+.footer-container {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   align-items: flex-start;
 
   @media screen and(max-width: 767px) {
     position: relative;
     gap: 25px;
-    
   }
 
   @media screen and(min-width: 768px) {
-    flex-direction: row; 
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;       
+    justify-content: space-between;
   }
 }
 
@@ -41,17 +40,17 @@
   padding-bottom: 8px;
 
   &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 1px;
-      background-color: $accent-color;
-  
-      scale: 0;
-      transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $accent-color;
+
+    scale: 0;
+    @include animation(scale);
+  }
 }
 
 .footer-list__links:hover::after,
@@ -69,9 +68,8 @@
   @media screen and(max-width: 767px) {
     position: absolute;
     top: 81px;
-    right: 32px;    
+    right: 32px;
   }
-  
 }
 
 .social-list__link {
@@ -84,14 +82,13 @@
   fill: #001414;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation(background-color);
 
-  &:hover, 
+  &:hover,
   &:focus {
     background-color: $accent-color;
   }
 }
-
 
 .social-list__icon {
   fill: #001414;
@@ -118,7 +115,7 @@
   gap: 16px;
 
   @media screen and(min-width: 768px) {
-    padding-right: 11px;    
+    padding-right: 11px;
   }
 
   @media screen and(min-width: 1280px) {
@@ -132,7 +129,7 @@
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 1.19;
-  
+
   color: $text-color;
 }
 
@@ -147,14 +144,13 @@
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 1.19;
-    
-  color: #8D9289;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  color: #8d9289;
+
+  @include animation(color);
+
   &:hover,
   &focus {
-    color: rgba(134, 229, 67, 0.5);;
+    color: rgba(134, 229, 67, 0.5);
   }
 }
-
