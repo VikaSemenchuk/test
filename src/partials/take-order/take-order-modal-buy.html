@@ -1,5 +1,10 @@
-<div class="backdrop is-hidden" data-order-modal>
-  <div class="add-modal animate__animated animate__tada">
+<div
+  class="backdrop is-hidden"
+  data-order-modal
+  data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom"
+>
+  <div class="add-modal">
     <button type="button" class="modal__close-btn" data-order-modal-close>
       <svg class="modal__close-icon" width="31" height="31">
         <use href="/src/images/icons.svg#icon-close"></use>
@@ -10,8 +15,16 @@
       for your order! <br />
       We will contact you soon!
     </p>
-    <button type="button" class="add-modal__btn" data-order-modal-close>
-      KEEP SHOPPING
-    </button>
+    <a href="/src/accessories.html">
+      <button
+        type="button"
+        class="add-modal__btn"
+        data-order-modal-close
+        data-aos="flip-left"
+        data-contact-modal-close
+      >
+        KEEP SHOPPING
+      </button>
+    </a>
   </div>
 </div>
