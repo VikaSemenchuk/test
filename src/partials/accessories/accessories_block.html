@@ -17,10 +17,34 @@
     
     <h1 class="accessories__title">All accessories</h1>
     <div class="sale__box">
-    <div class="line-1"></div>
-    <div class="line-2"></div>
-</div>
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+    </div>
     <div class="card__wrap">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <ul class="swiper-wrapper">
+          <!-- Slides -->
+          <li class="swiper-slide">
+
+          </li>
+          <li class="swiper-slide">
+            
+          </li>
+          <li class="swiper-slide">
+            <picture class="banner__img">
+              <source srcset="
+                      /src/images/gallery/banner-three-1x.jpg 1x,
+                      /src/images/gallery/banner-three-2x.jpg 2x
+                      " media="(min-width: 1280px)">
+              <img src="/src/images/gallery/banner-three-1x.jpg" alt="gaming keyboard" width="1280" height="507">
+            </picture>
+            <p class="banner__three">High-quality products in lowest price</p>
+          </li>
+        </ul>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
             <div class="card__wrap--tablet">
               <!-- LIST 1 -->
               <ul class="accessories__list list">
@@ -813,8 +837,8 @@
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
+    </div>
+  </div>
         <div class="blog__svg-container">
                     <svg class="blog__svg" width="40">
                         <use href="./images/icons.svg#icon-slider-current"></use>
@@ -825,6 +849,5 @@
                     <svg class="blog__svg blog__svg-last" width="16">
                         <use href="./images/icons.svg#icon-slider"></use>
                     </svg>
-                </div>
-  </div>
+        </div>
 </section>
