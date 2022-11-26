@@ -1,35 +1,127 @@
 /* ------------------Top-blog-article----------------- */
-// .blog-article-container {
+.blog-article-container {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 //     padding-top: 40px;
 //     @include desktop {  
 //     padding-top: 112px;
 // }
-// }
-
-.mob-img {
-    margin-left: auto;
-    margin-right: auto;
-        margin-bottom: 8px;
-        background-image:
-          url(/src/images/blog/headset-mob-1x.jpg);
-      
-        background-repeat: no-repeat;
-        height: 180px;
-        background-position: center;
-        background-size: cover;
-        @include tablet {
-            display: none;
-        };
-      
 }
 
+.article-mob {
+    @include tablet {
+        display: none;
+    }
+}
+
+.article-mob-wrap {
+    @include tablet {
+      display: none;
+    }
+  }
+  
+  .article-mob-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-image: url(/src/images/blog/headset-mob-1x.jpg);
+  
+    background-repeat: no-repeat;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+    // @include tablet {
+    //     display: none;
+    // };
+  }
+  .article-autor {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #ffffff;
+    margin-bottom: 8px;
+    @include tablet {
+      margin-bottom: 32px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 100%;
+      color: #86e543;
+      max-width: 248px;
+    }
+    @include desktop {
+      font-size: 24px;
+      color: #86e543;
+      margin-bottom: 0;
+    }
+  }
+  
+  .article-date {
+    font-weight: 600;
+    color: #8d9289;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 8px;
+    @include tablet {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 100%;
+      color: #8d9289;
+      max-width: 248px;
+    }
+    @include desktop {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+  }
+  .article-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 24px;
+  
+    color: #ffffff;
+    // margin-bottom: 24px;
+    @include desktop {
+      margin-bottom: 0;
+    }
+    @include tablet {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.16;
+      color: #ffffff;
+    }
+    // &:not(:last-child) {
+    //   margin-bottom: 24px;
+    // }
+  }
+
+// .mob-img {
+//     margin-left: auto;
+//     margin-right: auto;
+//         margin-bottom: 8px;
+//         background-image:
+//           url(/src/images/blog/headset-mob-1x.jpg);
+      
+//         background-repeat: no-repeat;
+//         height: 180px;
+//         background-position: center;
+//         background-size: cover;
+//         @include tablet {
+//             display: none;
+//         };
+      
+// }
+
 .blog-article-title {
-   
+    margin-left: 0;
+    margin-right: auto;
     font-weight: 600;
     font-size: 24px;
     line-height: 1.16;
     color: #FFFFFF;
-    max-width: 288px;
+    max-width: 320px;
     margin-bottom: 31px;
     @include tablet {
         margin-bottom: 72px;
@@ -134,6 +226,12 @@ margin-bottom: 24px;
     }
 }
 
+// .blog-article-top-img {
+//     @include desktop {
+//         margin-bottom: 0;
+//     }
+// }
+
 /* ------blog-article-middle----------- */
 .blog-article-middle-title {
     font-weight: 400;
@@ -162,6 +260,8 @@ margin-bottom: 24px;
     font-size: 16px;
     line-height: 1.18;
     color: #FFFFFF;
+    margin-bottom: 24px;
+
     @include tablet {
     padding-left: 40px;
 
@@ -169,6 +269,7 @@ margin-bottom: 24px;
         font-size: 24px;
         line-height: 1.16;
         color: #86E543;
+        margin-top: 0;
         margin-bottom: 24px;
             }
     @include desktop {
@@ -178,13 +279,6 @@ margin-bottom: 24px;
     color: #86E543;
     // margin-left: 30px;
     }
-    // @include tablet {
-    // font-weight: 400;
-    // font-size: 24px;
-    // line-height: 1.16;
-    // color: #86E543;
-    // margin-bottom: 24px;
-    //     }
 }
 
 /* ------blog-article-bottom----------- */
@@ -233,9 +327,12 @@ color: #FFFFFF;
         align-items: flex-end;
         margin-bottom: 16px;
     }
+    @include desktop {
+        margin-bottom: 0;
+    }
 }
 .blog-article-tab-title-top {
-    @media screen and (max-width:768px){
+    @media screen and (max-width:767px){
 display: none;
     }
         @include desktop {
