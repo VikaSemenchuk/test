@@ -8,6 +8,11 @@
     height: 80px;
     background-position: center;
     background-size: cover;
+    margin: 0 -15px;
+    @include tablet {
+      margin: 0 -40px;
+    }
+
   }
 
 //  .sale__box {
