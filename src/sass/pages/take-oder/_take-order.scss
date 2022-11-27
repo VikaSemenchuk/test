@@ -132,9 +132,7 @@ margin-bottom: 16px;
     // margin-bottom: 75px;
 }
 
-.order-section-title {
-    // margin-bottom: 32px;
-}
+
 
 .order-price-without-discount {
     font-weight: 600;
@@ -264,7 +262,7 @@ margin: 32px auto 0 auto;
 .order-select-wraper::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 0;
     transform: translateY(-80%);
 
@@ -295,6 +293,7 @@ margin: 32px auto 0 auto;
 
 .form-item:focus+.order-label.input {
     transform: translateY(-100%);
+    border-color: #86E543;
 }
 
 .form-item:not(:placeholder-shown)+.order-label.input {
