@@ -1,16 +1,16 @@
 .banner {
   display: block;
   margin: 0 auto;
-  max-width: 320px;
-  @include mobile {
-    max-width: 480px;
-  }
-  @include tablet {
-    max-width: 768px;
-  }
-  @include desktop {
-    max-width: 1600px;
-  }
+  // max-width: 320px;
+  // @include mobile {
+  //   max-width: 480px;
+  // }
+  // @include tablet {
+  //   max-width: 768px;
+  // }
+  // @include desktop {
+  //   max-width: 1600px;
+  // }
 }
 .swiper-wrapper {
   margin-bottom: 32px;
