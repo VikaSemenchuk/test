@@ -2,34 +2,27 @@
     position: relative;
 }
 .line-1 {
-    background-repeat: no-repeat;
     position: absolute;
 
     height: 71px;
     width: 100%;
     max-width: 480px;
-    top: -65;
-    // left: -180;
+    top: 0;
     background-image: url(/src/images/icon-title-line/mob-line-top.png);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     
-    // @media (max-width: 767px) {
-    // transform: scaleY(0.5);
-    // }
-    
     @include tablet {
-        
-        left: -50;
-        top: -70;
-        width: 100vw;
+        background-image: url(/src/images/icon-title-line/tab-line-top.png);
+        max-width: 768px;
+        top: 35;
     }
     @include desktop {
-        top: -64;
-        left: -40;
-        height: 71px;
-        width: 100vw;
-        max-width: 100%;
+        background-image: url(/src/images/icon-title-line/pc-line-top.png);
+
+        max-width: 1280px;
+        top: 40;
     }
 }
 
@@ -40,7 +33,7 @@
     height: 71px;
     width: 100%;
     max-width: 480px;
-    top: -60;
+    top: 6;
     // left: -185;
     background-image: url(/src/images/icon-title-line/mob-line-bottom.png);
     background-position: center;
@@ -51,13 +44,15 @@
     // }
 
     @include tablet {
-        
-        left: -50;
-        top: -63;
+        background-image: url(/src/images/icon-title-line/tab-line-bottom.png);
+
+        max-width: 768px;
+        top: 44;
     }
     @include desktop {
-        top: -55;
-        left: -40;
-        max-width: 100%;
+        background-image: url(/src/images/icon-title-line/pc-line-bottom.png);
+
+        max-width: 1280px;
+        top: 50;
     }
 }
