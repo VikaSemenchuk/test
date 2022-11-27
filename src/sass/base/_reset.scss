@@ -38,7 +38,15 @@ address {
   width: 100vw;
 }
 
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 main {
+flex: 1 1 auto;
   margin: 0 auto;
 
   background-image: url('../images/body/backgroung-mob-1x.jpg');
@@ -46,7 +54,7 @@ background-size: cover;
 background-position: top;
 background-repeat: no-repeat;
 background-color: darkgreen;
-  // max-width: 480px;
+  max-width: 480px;
 
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -62,7 +70,7 @@ background-color: darkgreen;
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url('../images/body/backgroung-tab-2x.jpg');
-  // max-width: 768px;
+  max-width: 768px;
 
   }
 
@@ -76,7 +84,7 @@ background-color: darkgreen;
     (min-resolution: 2dppx) {
     background-image: url('../images/body/backgroung-desktop-2x.jpg');
   }
-  // max-width: 1280px;
+  max-width: 1280px;
 
 }
 }

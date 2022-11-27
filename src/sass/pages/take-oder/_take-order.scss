@@ -218,6 +218,7 @@ margin: 32px auto 0 auto;
     @include desktop {
         display: flex;
         align-items: baseline;
+        justify-content: space-around;
         gap: 20px;
     }
 }

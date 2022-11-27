@@ -44,6 +44,9 @@
     column-gap: 20px;
   }
 }
+
+
+
 .section-title {
     position: relative;
   font-family: 'Roboto';
@@ -53,7 +56,7 @@
   line-height: 1.16;
   color: #FFFFFF;
   
-  margin-bottom: 35px;
+  // margin-bottom: 35px;
   padding-left: 80px;
     // &::after{
     //     top: 10;
@@ -73,12 +76,12 @@
     // }
   @media (min-width: 768px) {
     padding-left: 62px;
-    margin-bottom: 51px;
+    // margin-bottom: 51px;
     font-size: 56px;
     line-height: 1.17;
   }
   @media (min-width: 1280px) {
-    margin-bottom: 43px;
+    // margin-bottom: 43px;
     padding-left: 102px;
   }
 }
