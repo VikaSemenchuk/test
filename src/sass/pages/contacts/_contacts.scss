@@ -158,14 +158,14 @@ font-size: 16px;
   line-height: 1.18;
   // padding: 16 16 24 0;
   gap: 20px;
-  width: 288px;
+  max-width: 288px;
 
   @media screen and(min-width:480px) {
-    width: 330px;
+    max-width: 330px;
   }
 
   @media screen and(min-width:768px) {
-    width: 488px;
+    max-width: 488px;
     font-size: 24px;
     line-height: 1.16;
   }
