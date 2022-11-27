@@ -6,14 +6,17 @@
     position: absolute;
 
     height: 71px;
-    width: 100vw;
+    width: 100%;
+    max-width: 480px;
     top: -65;
-    left: -180;
-    background-image: url(../images/icon-title-line/sale-desk-bottom.svg);
-
-    @media (max-width: 767px) {
-    transform: scaleY(0.5);
-    }
+    // left: -180;
+    background-image: url(/src/images/icon-title-line/mob-line-top.png);
+    background-position: center;
+    background-size: cover;
+    
+    // @media (max-width: 767px) {
+    // transform: scaleY(0.5);
+    // }
     
     @include tablet {
         
@@ -35,15 +38,18 @@
     position: absolute;
 
     height: 71px;
-    width: 100vw;
+    width: 100%;
+    max-width: 480px;
     top: -60;
-    left: -185;
-    background-image: url(../images/icon-title-line/sale-desk-top.svg);
+    // left: -185;
+    background-image: url(/src/images/icon-title-line/mob-line-bottom.png);
+    background-position: center;
+    background-size: cover;
 
-    @media (max-width: 767px) {
-    transform: scaleY(0.5);
-    }
-    
+    // @media (max-width: 767px) {
+    // transform: scaleY(0.5);
+    // }
+
     @include tablet {
         
         left: -50;
