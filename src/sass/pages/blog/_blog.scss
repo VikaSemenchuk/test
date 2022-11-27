@@ -1,3 +1,6 @@
+.blog {
+  margin: 0 auto;
+}
 .blog__container-mob {
   @media screen and (min-width: 768px) {
     display: none;
@@ -21,6 +24,8 @@
     display: none;
   }
 }
+
+
 
 // .line-1 {
 //   background-repeat: no-repeat;
