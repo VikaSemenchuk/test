@@ -36,6 +36,8 @@
 }
 
 .accessories__filter {
+  width: calc(100% - 15px);
+
   @media screen and (max-width: 768px) {
     width: calc(100% - 48px);
     margin: 0 auto 40px auto;
