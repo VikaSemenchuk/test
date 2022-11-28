@@ -33,7 +33,6 @@
   min-height: 367px;
   background-color: $main-bgcolor;
   padding: 100px 0;
-  perspective: 1000px;
   opacity: 1;
   @include animation(opacity);
 
@@ -71,7 +70,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  border: 2px solid #86e543;
+  border: 2px solid $accent-color;
   border-radius: 50%;
   background-color: $main-bgcolor;
 
@@ -98,9 +97,7 @@
 }
 
 .modal__text {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.16;
+  @include font(600, 24px, 1.16, null);
   text-align: center;
   color: $text-color;
   padding: 0;
@@ -111,8 +108,7 @@
 }
 @include tablet {
   .modal__text {
-    font-size: 56px;
-    line-height: 1.17;
+    @include font(null, 56px, 1.17, null);
     padding: 0 40px;
   }
 }
@@ -130,8 +126,7 @@
     font-size: 56px;
   }
 }
-.modal__btn,
-.modal__btn,
+
 .modal__btn {
   width: 173px;
   padding-top: 16px;
@@ -147,15 +142,13 @@
   align-items: center;
 
   transform: rotateX(0);
-  transition: transform $duration $timing-function;
+  @include animation(transform);
 
   cursor: pointer;
   @include animation(box-shadow);
 }
 .modal-btn__text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(700, 16px, 1.18, null);
   text-align: right;
   text-transform: uppercase;
   color: $main-bgcolor;
@@ -166,17 +159,13 @@
   }
 }
 @include tablet {
-  .modal__btn,
-  .modal__btn,
   .modal__btn {
     width: 306px;
     margin-top: 56px;
   }
 }
 .modal__btn:hover,
-.modal-btn__text:hover,
-.modal__btn:focus,
-.modal-btn__text:focus {
+.modal__btn:focus {
   box-shadow: $button-boxshadow;
   animation: flip 1s linear;
 }
