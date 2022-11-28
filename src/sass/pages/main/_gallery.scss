@@ -86,8 +86,10 @@
     #ebdcff 57.91%,
     #ff98f3 92.2%
   );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
+  
   @include tablet {
     left: 41px;
     top: 352px;
@@ -120,9 +122,9 @@
     #693cf9 60.87%,
     #f475eb 107.89%
   );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
-
   @include tablet {
     left: 41px;
     top: 352px;
