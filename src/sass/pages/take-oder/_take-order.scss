@@ -1,14 +1,6 @@
-// .order.container {
-//     width: 1280px;
-//     padding: 120px 15px;
-//     margin: 0 auto;
-// }
-
-/* -------------Order Information-------------- */
-
 .order-mob-section-title {
   @include font(600, 32px, 1.18, null);
-  color: #ffffff;
+  color: $text-color;
   max-width: 287px;
   margin-bottom: 16px;
   @include tablet {
@@ -20,9 +12,7 @@
   margin-bottom: 16px;
 }
 .order-mob-price-without-discount {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 100%;
+  @include font(600, 16px, 100%, null);
   text-decoration-line: line-through;
 
   color: #8d9289;
@@ -33,11 +23,9 @@
 }
 
 .order-mob-price-with-discount {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 100%;
+  @include font(600, 16px, 100%, null);
 
-  color: #86e543;
+  color: $accent-color;
 
   @include tablet {
     font-size: 48px;
@@ -92,17 +80,13 @@
 }
 
 .order-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.16;
-  color: #ffffff;
+  @include font(600, 24px, 1.16, null);
+  color: $text-color;
 }
 
 .order-section-title {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1.18;
-  color: #ffffff;
+  @include font(600, 32px, 1.18, null);
+  color: $text-color;
   max-width: 287px;
   @include tablet {
     max-width: 692px;
@@ -126,20 +110,16 @@
 }
 
 .order-price-without-discount {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 100%;
+  @include font(600, 24px, 100%, null);
   text-decoration-line: line-through;
 
   color: #8d9289;
 }
 
 .order-price-with-discount {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 100%;
+  @include font(600, 48px, 100%, null);
 
-  color: #86e543;
+  color: $accent-color;
 }
 
 .order-prices {
@@ -164,7 +144,6 @@
   border-radius: 6px;
 }
 
-/* --------------Order Form------------- */
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -189,11 +168,9 @@
 }
 
 .order-form-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.16;
+  @include font(600, 24px, 1.16, null);
 
-  color: #86e543;
+  color: $accent-color;
   margin-bottom: 16px;
 
   @include desktop {
@@ -219,10 +196,6 @@
     max-width: 480px;
   }
 
-  // @include tablet{
-  //     max-width: 523px;
-  // }
-
   @include desktop {
     display: flex;
     flex-wrap: wrap;
@@ -233,13 +206,10 @@
 }
 
 .order-label {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.11;
-
+  @include font(400, 16px, 1.1, null);
   text-transform: capitalize;
 
-  color: #ffffff;
+  color: $text-color;
   @include tablet {
     font-size: 18px;
   }
@@ -279,7 +249,7 @@
   height: 0;
   border-style: solid;
   border-width: 14px 10px 0 10px;
-  border-color: #ffffff transparent transparent transparent;
+  border-color: $text-color transparent transparent transparent;
   border-radius: 3px;
   pointer-events: none;
 }
@@ -337,20 +307,18 @@
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
-  color: #ffffff;
+  color: $text-color;
   margin-bottom: 22px;
   height: 40px;
   width: 100%;
 }
 
 .btn-buy {
+  @include font(700, 16px, 1.18, null);
   font-family: inherit;
-  font-weight: 700;
-  line-height: 1.18;
-  font-size: 16px;
   text-transform: uppercase;
-  color: #01383a;
-  background-color: #86e543;
+  color: $main-bgcolor;
+  background-color: $accent-color;
   border-radius: 16px;
   cursor: pointer;
   border: none;
@@ -368,21 +336,18 @@
 }
 
 .btn-buy:hover {
-  box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-    0px 4px 10px rgba(255, 255, 255, 0.1);
+  box-shadow: $button-boxshadow;
 }
 
 .btn-add {
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(700, 16px, 1.18, null);
   text-transform: uppercase;
-  color: #86e543;
-  background-color: #01383a;
+  color: $accent-color;
+  background-color: $main-bgcolor;
   border-radius: 16px;
   cursor: pointer;
-  border: 1px solid #86e543;
+  border: 1px solid $accent-color;
 
   padding: 16px 35px;
 
