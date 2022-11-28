@@ -141,12 +141,21 @@
   }
 }
 // .swiper-pagination {
-
 // }
 .swiper {
-  & .swiper-pagination {
+  &>.swiper-pagination {
     position: relative;
     bottom: 0;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+
+      @include tablet {
+        max-width: 768px;
+      }
+      @include desktop {
+        max-width: 1280px;
+      }
   }
   & .swiper-pagination-bullet {
     margin: 0;
