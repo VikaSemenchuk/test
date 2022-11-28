@@ -99,6 +99,7 @@
                   id="name"
                   placeholder="Name"
                   class="contact-form__input"
+                  required
                 />
               </label>
             </div>
@@ -111,6 +112,9 @@
                   id="email"
                   placeholder="Email"
                   class="contact-form__input"
+                  pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                  size="30"
+                  required
                 />
               </label>
             </div>
