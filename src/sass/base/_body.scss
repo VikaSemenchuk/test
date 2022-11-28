@@ -1,9 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   @include font(400, 14px, null, 0.03em);
-  color: var(--text-color-first);
+  color: $text-color;
   
-  max-width: 1600px;
+  // max-width: 1600px;
   margin: 0 auto;
 
   background-position: top;
