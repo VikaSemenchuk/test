@@ -130,8 +130,7 @@
     font-size: 56px;
   }
 }
-.modal__btn,
-.modal__btn,
+
 .modal__btn {
   width: 173px;
   padding-top: 16px;
@@ -166,8 +165,6 @@
   }
 }
 @include tablet {
-  .modal__btn,
-  .modal__btn,
   .modal__btn {
     width: 306px;
     margin-top: 56px;
