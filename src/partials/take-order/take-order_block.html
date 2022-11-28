@@ -193,68 +193,72 @@
       <div class="order-form__wrap container">
         <p class="order-form-title">CONTACT US</p>
         <form class="order-form">
-          <div class="order-form-wrap"></div><div class="order-form-part-one">
-            <div class="order-form-thumb">
-              <input
-                class="order-input form-item"
-                type="text"
-                id="name"
-                name="username"
-                placeholder=" "
-                required
-              />
-              <label class="order-label input" for="name">Name</label>
+          <div class="flex">
+            <div class="order-form-part-one">
+              <div class="order-form-thumb">
+                <input
+                  class="order-input form-item"
+                  type="text"
+                  id="name"
+                  name="username"
+                  placeholder=" "
+                  required
+                />
+                <label class="order-label input" for="name">Name</label>
+              </div>
+
+              <div class="order-form-thumb">
+                <input
+                  class="order-input form-item"
+                  type="email"
+                  id="mail"
+                  name="mail"
+                  placeholder=" "
+                  required
+                  pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}"
+                  title="Please include an '@' in the email address e.g. user@mail.com"
+                  size="30"
+                />
+                <label class="order-label input" for="mail">Email</label>
+              </div>
+
+              <div class="order-select-wraper">
+                <select class="form-item dropdown" name="color">
+                  <option value="color">Color Option</option>
+                  <option value="Orange">K9D Black Orange</option>
+                  <option value="Gray">K9D Silver Gray</option>
+                  <option value="White">K9U White Blue</option>
+                </select>
+              </div>
+              <div class="order-select-wraper">
+                <select class="form-item dropdown" name="number">
+                  <option value="quantity">Quantity</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <div class="order-select-wraper">
+                <select class="form-item dropdown" id="payment" name="payment">
+                  <option value="payment">Payment</option>
+                  <option value="paypal">PayPal</option>
+                  <option value="applepay">Apple Pay</option>
+                </select>
+              </div>
             </div>
 
-            <div class="order-form-thumb">
-              <input
-                class="order-input form-item"
-                type="email"
-                id="mail"
-                name="mail"
-                placeholder=" "
-                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
-                size="30"
-                required
-              />
-              <label class="order-label input" for="mail">Email</label>
-            </div>
-
-            <div class="order-select-wraper">
-              <select class="form-item dropdown" name="color">
-                <option value="color">Color Option</option>
-                <option value="Orange">K9D Black Orange</option>
-                <option value="Gray">K9D Silver Gray</option>
-                <option value="White">K9U White Blue</option>
-              </select>
-            </div>
-            <div class="order-select-wraper">
-              <select class="form-item dropdown" name="number">
-                <option value="quantity">Quantity</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-            </div>
-
-            <div class="order-select-wraper">
-              <select class="form-item dropdown" id="payment" name="payment">
-                <option value="payment">Payment</option>
-                <option value="paypal">PayPal</option>
-                <option value="applepay">Apple Pay</option>
-              </select>
+            <div class="order-form-part-two">
+              <label class="order-label" for="feedback"
+                >Leave your message</label
+              >
+              <textarea
+                class="order-text-area"
+                id="feedback"
+                name="feedback"
+              ></textarea>
             </div>
           </div>
-
-          <div class="order-form-part-two">
-            <label class="order-label" for="feedback">Leave your message</label>
-            <textarea
-              class="order-text-area"
-              id="feedback"
-              name="feedback"
-            ></textarea>
-          </div></div>
-
           <div class="order-btns">
             <button class="btn-buy" type="submit" data-order-modal-open>
               Buy it now
