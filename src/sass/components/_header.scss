@@ -100,7 +100,7 @@
 }
 .shopnow {
   @include font(700, 14px, 22px, 1.57);
-  color: $text-secondary-color;
+  color: $btn-secondary-color;
 
   padding: 9px 18px;
   background-color: $accent-color;
