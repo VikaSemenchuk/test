@@ -7,9 +7,7 @@
 /* -------------Order Information-------------- */
 
 .order-mob-section-title {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1.18;
+  @include font(600, 32px, 1.18, null);
   color: #ffffff;
   max-width: 287px;
   margin-bottom: 16px;

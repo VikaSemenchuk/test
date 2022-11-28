@@ -13,16 +13,16 @@
 //     width: 100vw;
 //      top: -90px;
 //     left: -120px;
-  
+
 //     // @media (max-width: 767px) {
 //     // transform: scaleY(0.5);
-//     // }  
-    
+//     // }
+
 //     @include tablet {
 //       background-image: url('../images/icon-title-line/contacts-tab-top.svg');
 //   left: -55;
 //         top: -70;
-      
+
 // }
 
 // @include desktop {
@@ -33,7 +33,6 @@
 //         width: 100vw;
 // }
 // }
-
 
 // .contacts__line-2 {
 //     background-image: url('../images/icon-title-line/contacts-mob-bottom.svg');
@@ -48,7 +47,7 @@
 //     // @media (max-width: 767px) {
 //     // transform: scaleY(0.5);
 //     // }
-    
+
 // @include tablet {
 //    background-image: url('../images/icon-title-line/contacts-tab-top.svg');
 //    left: -50;
@@ -63,25 +62,26 @@
 // }
 
 .contacts__bgn-image {
-@media screen and (max-width:767px){
-  max-width: 100%;
-  height: 285px;
-  background-image: url('../images/contacts/rectangle@11x.mob.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+    height: 285px;
+    background-image: url('../images/contacts/rectangle@11x.mob.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-  @include double-pixel {
-    background-image: url('../images/contacts/rectangle@22x.mob.jpg');
-}
-@media screen and (min-width:768px) {
+    @include double-pixel {
+      background-image: url('../images/contacts/rectangle@22x.mob.jpg');
+    }
+    @media screen and (min-width: 768px) {
       display: none;
-    } 
-}}
+    }
+  }
+}
 
 .contact__img {
   height: 285px;
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
@@ -99,13 +99,13 @@
   @include tablet {
     flex-direction: row;
     gap: 32px;
-}
-@include desktop {
-  margin-top: 40px;
- display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
+  }
+  @include desktop {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .contact-form__telefone:not(:last-child) {
@@ -113,21 +113,21 @@
 }
 
 .contact__mail {
-font-size: 16px;
- line-height: 1.2;
- color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #ffffff;
 }
 
 .contact__content {
   font-size: 16px;
- line-height: 1.2;
- color: #FFFFFF;
- margin-top: 16px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-top: 16px;
 
- @include desktop {
-  display: flex;
-  justify-content: space-between;
- }
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contact__title {
@@ -142,7 +142,6 @@ font-size: 16px;
   @media screen and(min-width:768px) {
     font-size: 56px;
     line-height: 1.17;
-
   }
 }
 
@@ -171,7 +170,6 @@ font-size: 16px;
   }
 }
 
-
 .contact-form__subtitle {
   color: #ffff;
   font-weight: 400;
@@ -184,10 +182,11 @@ font-size: 16px;
     line-height: 1.16;
   }
 
-  @media screen and(min-width:1280px) {}
+  @media screen and(min-width:1280px) {
+  }
 }
 
-.contact-form {  
+.contact-form {
   width: 100%;
   margin-bottom: 24px;
 
@@ -215,8 +214,8 @@ font-size: 16px;
 }
 
 .contact-form__title {
-   margin-top: 40px;
-    margin-bottom: 48px;
+  margin-top: 40px;
+  margin-bottom: 48px;
   color: #86e543;
   font-weight: 500;
   font-size: 24px;
@@ -224,8 +223,6 @@ font-size: 16px;
 
   @include tablet {
     font-size: 36px;
-   
-
   }
 }
 
@@ -242,9 +239,13 @@ font-size: 16px;
   border: none;
   border-bottom: 1px solid #86e543;
   padding-bottom: 4px;
-
 }
-
+.contact-form__input:not(:placeholder-shown):required:valid {
+  border-color: $accent-color;
+}
+.contact-form__input:not(:placeholder-shown):required:invalid {
+  border-color: red;
+}
 .address {
   @media screen and(min-width:768px) {
     display: flex;
@@ -258,7 +259,6 @@ font-size: 16px;
     padding-right: 32px;
   }
 }
-
 
 .contact-form__input::placeholder {
   font-weight: 400;
@@ -285,8 +285,6 @@ font-size: 16px;
   }
 }
 
-
-
 .contact-form__modal-coment {
   width: 100%;
   height: 95px;
@@ -296,8 +294,6 @@ font-size: 16px;
   resize: none;
   padding-top: 4px;
   color: #ffffff;
-
-  
 }
 
 .contact-form__div:not(:first-child) {
@@ -310,7 +306,6 @@ font-size: 16px;
 
 /*btn*/
 .contact-form__btn {
-  
   border: 1px solid #ffffff;
   border-radius: 16px;
   font-weight: 700;
@@ -331,17 +326,19 @@ font-size: 16px;
     width: 306px;
     height: 70px;
   }
-
-  .contact__btn {
-  margin-top: 24px;
 }
+.contact__btn {
+  margin-top: 24px;
 
-
+  @include tablet {
+    margin: 34px auto 0 auto;
+  }
   @include desktop {
-    margin: 0;
+    margin-top: 47px;
   }
 }
 
 .contact-form__btn:hover {
-  filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1)) drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
+  filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1))
+    drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
 }
