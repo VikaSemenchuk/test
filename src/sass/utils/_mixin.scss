@@ -31,5 +31,5 @@
   letter-spacing: $ls;
 }
 @mixin animation($property) {
-  transition: $property $duration $timing-function;
+  transition: $property $duration $cubic;
 }

@@ -1,7 +1,6 @@
 .footer {
-  background-color: #001414;
+  background-color: $footer-bgcolor;
   padding: 25px 0;
-  // min-width: 320px;
   width: 100%;
 }
 
@@ -15,7 +14,7 @@
     gap: 25px;
   }
 
-  @media screen and(min-width: 768px) {
+  @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -24,6 +23,7 @@
 
 .footer-logo__logo {
   @include font(700, 24px, 28px, 1.17);
+
   text-align: center;
   color: $text-color;
 }
@@ -45,7 +45,7 @@
     background-color: $accent-color;
 
     scale: 0;
-    @include animation(scale);
+    transition: scale 250ms $cubic;
   }
 }
 
@@ -75,10 +75,11 @@
   width: 24px;
   height: 24px;
   background-color: $text-color;
-  fill: #001414;
+  fill: $footer-bgcolor;
   border-radius: 50%;
   cursor: pointer;
-  @include animation(background-color);
+  transition: background-color 250ms $cubic;
+
   &:hover,
   &:focus {
     background-color: $accent-color;
@@ -86,7 +87,7 @@
 }
 
 .social-list__icon {
-  fill: #001414;
+  fill: $footer-bgcolor;
 }
 
 .social-list {
@@ -94,12 +95,12 @@
   flex-direction: column;
   gap: 32px;
 
-  @media screen and(min-width: 768px) {
+  @include tablet {
     flex-direction: row;
     gap: 16px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @include desktop {
     flex-direction: column;
   }
 }
@@ -109,11 +110,11 @@
   flex-direction: column;
   gap: 16px;
 
-  @media screen and(min-width: 768px) {
+  @include tablet {
     padding-right: 11px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @include desktop {
     padding-right: 138px;
   }
 }
@@ -133,13 +134,12 @@
 
 .footer-list__contact {
   @include font(400, 16px, 19px, 1.19);
+  color: $secondary-text-color;
 
-  color: #8d9289;
-
-  @include animation(color);
+  transition: color 250ms $cubic;
 
   &:hover,
   &focus {
-    color: rgba(134, 229, 67, 0.5);
+    color: $hover-icon-color;
   }
 }

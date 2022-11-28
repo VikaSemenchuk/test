@@ -8,10 +8,10 @@
   width: 100vw;
   height: 100%;
   opacity: 1;
-  background-color: rgba(0, 20, 20, 0.8);
+  background-color: $modal-bg;
   z-index: 2;
-  transition: opacity $duration $timing-function,
-    visibility $duration $timing-function;
+  transition: opacity $duration $cubic,
+    visibility $duration $cubic;
 }
 .backdrop.is-hidden {
   visibility: hidden;
