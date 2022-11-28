@@ -21,9 +21,7 @@
 
 .accessories__btn {
   padding: 8px 16px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(700, 16px, 1.18, null);
   background-color: transparent;
 
   color: $accent-color;
@@ -38,21 +36,23 @@
 .accessories__btn:hover,
 .accessories__btn:focus {
   background-color: $accent-color;
-  color: #01383a;
+  color: $main-bgcolor;
 }
 
 .accessories__title {
   position: relative;
   text-align: center;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    padding-left: 90px;
-    text-align: left;
+
+  @include font(500, 24px, 1.16, null);
+
+  @include mobile {
+    @media screen and (max-width: 767px) {
+      padding-left: 90px;
+      text-align: left;
+    }
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     text-align: left;
     font-size: 56px;
     padding-left: 120px;
@@ -99,8 +99,8 @@
   bottom: -2;
   height: 100%;
   padding: 16px;
-  background: linear-gradient(0deg, #01383a, #01383a);
-  border: 1px solid #86e543;
+  background: linear-gradient(0deg, $main-bgcolor, $main-bgcolor);
+  border: 1px solid $accent-color;
   border-radius: 12px;
   transform: translateY(100%);
   transition: transform 250ms linear;
@@ -114,9 +114,9 @@
 .accessories__overlay-text {
   display: block;
   margin-bottom: 14px;
-  font-size: 14px;
-  line-height: 1.14;
-  color: #ffffff;
+
+  @include font(null, 14px, 1.14, null);
+  color: $text-color;
 }
 
 .accessories__item {
@@ -131,8 +131,10 @@
 }
 
 .tab__hidden {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: none;
+  @include tablet {
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
   }
 }
 
@@ -144,11 +146,8 @@
 
 .accessories__product {
   margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: #86e543;
+  @include font(500, 22px, 1.18, null);
+  color: $accent-color;
 }
 
 .accessories__prices {
@@ -159,37 +158,29 @@
 }
 
 .accessories__first-price {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 100%;
+  @include font(500, null, 100%, null);
+
   text-decoration-line: line-through;
-  color: #8d9289;
+  color: $secondary-text-color;
 }
 
 .accessories__second-price {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 100%;
-  color: #86e543;
+  @include font(500, 20px, 100%, null);
+  color: $accent-color;
 }
 
 .accessories__prise {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 100%;
+  @include font(600, 14px, 100%, null);
 
   text-decoration-line: line-through;
-
-  color: #8d9289;
+  color: $secondary-text-color;
 }
 
 .accessories__sale {
   margin-left: auto;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 100%;
-  text-decoration: none;
-  color: #86e543;
+  
+  @include font(600, 20px, 100%, null);
+  color: $accent-color;
 }
 
 .accessories__library {
